@@ -11,7 +11,7 @@ def main():
     assert re.search(r'^name: image-gen-soul$', core, re.M), 'Unexpected skill name'
     for phrase in ['No emoji icons', 'No eyebrows', '14px', '4.5:1', '3:1', 'cursor: pointer', 'No sliders', '200%', '320']:
         assert phrase in core, f'Missing interface rule: {phrase}'
-    references = set(re.findall(r'(?:guides|scripts|templates)/[\w.-]+', core))
+    references = {path.rstrip('.') for path in re.findall(r'(?:guides|scripts|templates)/[\w.-]+', core)}
     references.update(['templates/site-brief.md', 'requirements.txt', 'README.md', 'CHANGELOG.md'])
     for relative in references:
         assert (ROOT / relative).is_file(), f'Missing referenced file: {relative}'
