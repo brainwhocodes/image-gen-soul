@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "job_id": null,
+  "operation": null,
+  "references": [],
+  "brief": {
+    "deliverable": null,
+    "dimensions_px": null,
+    "aspect_ratio": null,
+    "exact_copy": [],
+    "preserve": [],
+    "change": [],
+    "avoid": [],
+    "copy_safe_regions": [],
+    "required_brand_assets": [],
+    "assumptions": []
+  },
+  "selected_anchors": {
+    "composition": null,
+    "visual_treatment": null,
+    "color": null,
+    "subject": null,
+    "typography_layout": null
+  },
+  "generation": {
+    "status": "not_started",
+    "actual_tool": null,
+    "actual_settings": {},
+    "prompt_path": null,
+    "raw_output_path": null
+  },
+  "color_correction": {
+    "status": "not_started",
+    "reason": null,
+    "recipe_path": null,
+    "graded_output_path": null,
+    "mask_paths": []
+  },
+  "production": {
+    "status": "not_started",
+    "layout_source_path": null,
+    "final_output_paths": []
+  },
+  "qa": {
+    "checks_performed": [],
+    "visual_review_passed": null,
+    "remaining_limitations": []
+  }
+}
