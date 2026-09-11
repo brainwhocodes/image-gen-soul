@@ -79,6 +79,7 @@ The palette helper uses a 5-bit RGB histogram and six weighted clusters over a s
 - No emoji icons or introductory eyebrow labels above headings.
 - 16px body text; 14px minimum for labels, captions, code and responsive states.
 - At least 4.5:1 text contrast and 3:1 essential control and focus contrast against actual surfaces.
+- Every video uses a custom player styled to the site, with accessible playback controls and explicit states.
 - No sliders or dragging requirements. Use labeled buttons and other native click controls.
 - Pointer cursors for all interactive elements; keyboard support, visible focus and explicit states.
 - Prefer 44px targets, test 320px reflow and 200% text resizing.

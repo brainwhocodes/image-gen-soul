@@ -14,7 +14,7 @@ compatibility: >-
   correction requires local Python 3.10+, Pillow, and NumPy. Supporting scripts
   make no network or image-generation calls. Respect host tool contracts.
 metadata:
-  version: "1.2.0"
+  version: "1.2.1"
 ---
 
 # Image Gen Soul
@@ -288,6 +288,12 @@ Do not implement range sliders, draggable comparison dividers, drag-only carouse
 - Prefer 44 by 44 CSS pixel targets for controls. Never fall below WCAG 2.2 AA's 24 by 24 target requirement unless a documented exception such as an inline text link applies. Keep adjacent actions separated.
 - Use native semantics, visible focus, associated labels and accurate pressed/expanded states. Do not remove keyboard activation to implement a mouse interaction. Make selected states identifiable beyond color alone.
 - Avoid disabling controls silently at a bound. Keep the current value clear, clamp it safely and announce relevant changes. Do not autoplay sound.
+
+### Custom video players
+
+Every video included in a website must use a custom player designed in that site's visual language: its typography, colors, spacing, borders and button states. Do not expose the browser's default video control bar or embed an unstyled third-party player. Only include video when the page calls for it.
+
+Build the player with semantic, labeled controls for play/pause, restart or time skipping, mute and volume; add captions, transcripts and fullscreen where appropriate to the content. Keep the current time, duration and playback status readable. Apply the same 14px text floor, contrast, focus, keyboard, target-size and pointer-cursor rules as the rest of the interface. Use buttons or discrete choices instead of sliders or drag-only seeking. Do not autoplay sound. Handle loading, ended and playback-error states visibly.
 
 ### Verify before delivery
 
