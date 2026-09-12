@@ -1,3 +1,7 @@
+# 1.3.0
+
+Makes meaningful reference-driven variations the default: preserve visual treatment while replacing people, objects and scene elements. Requires exact prompts and explicit preserve/change records.
+
 # 1.2.1
 
 Requires a custom video player styled to each site, with accessible click controls and explicit playback states.

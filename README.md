@@ -2,7 +2,7 @@
 
 A reference-driven skill for image generation, brand art, UI concepts, plain HTML/CSS websites, font selection, theme tokens and measured color correction.
 
-Start with your images. Describe what to preserve and what may change. The skill carries that intent through prompting, generation, inspection, correction and implementation. It has no default aesthetic, reference library or fixed palette.
+Start with your images. Preserve their visual language while making meaningful variations with different people, objects, items or scene elements. Describe what stays and name what changes. The skill carries that intent through prompting, generation, inspection, correction and implementation. It has no default aesthetic, reference library or fixed palette.
 
 [Companion field guide](https://soul.brainwhocodes.rocks/) · [Interface rules](https://soul.brainwhocodes.rocks/guides/interface-rules/) · [Download the skill](https://soul.brainwhocodes.rocks/downloads/image-gen-soul.zip)
 
@@ -74,7 +74,7 @@ python scripts/color_pipeline.py compare raw.png final.png comparison.png --refe
 
 The palette helper uses a 5-bit RGB histogram and six weighted clusters over a sample of up to 256 pixels per side, with alpha-weighted shares and a 32-bin linear-light luminance histogram. It does not recognize subjects, infer original prompts or assign semantic UI roles. Fully transparent images return an empty palette.
 
-## Interface rules in version 1.2
+## Interface rules
 
 - No emoji icons or introductory eyebrow labels above headings.
 - 16px body text; 14px minimum for labels, captions, code and responsive states.

@@ -14,14 +14,14 @@ compatibility: >-
   correction requires local Python 3.10+, Pillow, and NumPy. Supporting scripts
   make no network or image-generation calls. Respect host tool contracts.
 metadata:
-  version: "1.2.1"
+  version: "1.3.0"
 ---
 
 # Image Gen Soul
 
 Turn the user's current references into the requested asset, not into a generic
 interpretation of a remembered style. Preserve what makes the reference visually
-recognizable while changing only what the brief calls for.
+recognizable while deliberately varying people, objects, items or scene elements as the brief allows.
 
 This is one coordinating skill with optional procedural guides. It ships without
 reference images, reference profiles, style libraries, palette presets, or sample
@@ -39,7 +39,7 @@ Choose from the request, not from a mandatory questionnaire:
 | Operation | Work to perform |
 |---|---|
 | **Close recreation** | Reproduce the selected reference's composition and treatment as closely as requested; use editing or direct reuse where exact pixels matter. |
-| **Variation** | Preserve specified visual properties; vary only the requested subject, setting, objects, season, composition, or copy. |
+| **Variation (default)** | Preserve the original visual language while deliberately changing people, objects, items or scene elements; name the replacements in a preserve/change contract. |
 | **Format adaptation** | Adapt the reference into a social post, website background, flyer, or other deliverable. Recompose rather than stretch. |
 | **Prompt expansion** | Produce a detailed reusable-for-this-job prompt and relevant variants; do not generate when the user asks for text only. |
 | **Layer separation** | Produce coordinated background, foreground, optional atmosphere, and layout layers. |
@@ -257,6 +257,18 @@ For a full landing page, first map reference roles and requested content to sect
 Record each asset's source role, actual prompt, output dimensions, raw file, measured palette, grade decision and export. Suggested prompts reconstructed from references must be labeled as suggestions; never claim access to an unknown original prompt. Concept boards and UI images are not functioning interfaces. Label fictional content and local demonstrations; do not fabricate bookings, messages, claims or customer evidence.
 
 For palette extraction, record the sampling size, color space, quantization or clustering method and pixel shares. Distinguish measured representative colors from manually curated semantic tokens. Do not infer original color-correction recipes from a flattened reference.
+
+## Reference-driven variations
+
+Generated images should be meaningful variations of the original reference, with different people, objects, items, animals, plants or scene elements. Preserve the reference's defining visual language: medium, edge treatment, texture, lighting, color relationships, composition rhythm and relative scale. Do not merely recolor an otherwise copied scene or change imperceptible details.
+
+Before generation, write a concrete preserve/change contract. Name the original focal subjects and their replacements: for example, replace a computer with a sewing machine, change the sitter and clothing, or exchange magnolias for camellias. Use the actual selected original as the visual anchor, not a chain of previous derivatives. A collection organizes references; it does not justify blending incompatible media.
+
+When the user has not specified replacements, choose coherent new subjects suited to the deliverable and state them in the prompt. Honor explicit identity, product, logo or exact-recreation requirements; do not change a required subject against the user's instructions. Close recreation is an explicit operation, not the default for reference-driven generation.
+
+Record the exact prompt sent to the image tool, the attached original's identity, requested and returned dimensions, raw output, preserved properties, intended substitutions and observed result. Inspect that the replacements actually occurred and the visual treatment remains recognizable. If a requested change is missing, repair or regenerate before calling the asset complete. Do not relabel an earlier reconstruction prompt as a variation prompt.
+
+In guidance pages, show the original and generated variation with clear labels, a preserve/change explanation and reproducible steps. Keep original prompt history unknown unless supplied. Measure each image's palette separately: different subjects naturally change pixel shares. Do not force a variation's global histogram to match the original when that harms the new scene. Record a no-correction decision honestly; resizing and web compression are delivery steps, not a creative color grade.
 
 ## 11. Mandatory interface rules
 
