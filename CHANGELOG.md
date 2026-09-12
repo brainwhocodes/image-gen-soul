@@ -1,3 +1,7 @@
+# 1.7.1
+
+Expands REDESIGN to navigation, modals, search, forms and individual custom controls. Requires a component and state inventory, brand-conditioned state mockups before implementation, distinctive visual treatments with semantic behavior, and mouse/keyboard checks of connected journeys. Adds guidance for focus and dismissal, search results and suggestions, validation, recovery and truthful submission outcomes, with WAI implementation references. REDESIGN sub-skill version 1.1.0.
+
 # 1.7.0
 
 Adds the referenced REDESIGN sub-skill for existing websites and pages: audit real behavior, verify or create a combined brand kit, attach the before screenshot and kit to generate a structural UI variation, generate embedded artwork separately, and compare working implementation to the selected concept.

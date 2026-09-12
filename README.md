@@ -48,7 +48,11 @@ When implementing a selected mockup, generate its content images separately. Ask
 
 Use the [REDESIGN sub-skill](skills/redesign/SKILL.md) with an existing page URL or screenshot. It audits the real page, verifies or creates the combined brand kit, generates a distinct UI variation before code, and generates any new images inside that mockup separately. It returns the actual variation and implements it when requested. Keep the package together so the sub-skill can resolve its parent and guides.
 
+You can also redesign a single component or shared interaction system: navigation, modals, search, forms and distinctive custom controls. The workflow covers their expanded, results, validation and completion states, with generated state references before implementation and real mouse/keyboard journey checks. Custom visual treatments should express the brand while preserving semantic behavior.
+
 > Use Image Gen Soul's REDESIGN sub-skill on this site. Preserve its purpose and useful behavior, create a brand kit if missing, generate a new UI variation, then build and verify it. Show the before, generated concept and implemented result.
+
+> Use REDESIGN to create a distinctive search bar, results panel and mobile navigation for this existing site. Preserve its content and search integration. Attach its brand kit, generate two alternatives showing the main resting and expanded states, then implement the selected direction. Verify mouse and keyboard operation, suggestions, no matches, clear/reset and focus restoration.
 
 The companion site's [worked redesign](https://soul.brainwhocodes.rocks/redesign/) shows the actual before screenshot, combined HTML brand kit, two generated alternatives, page references and implementation. Site code and artwork remain outside this skill repository.
 

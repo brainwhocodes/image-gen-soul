@@ -14,7 +14,7 @@ compatibility: >-
   correction requires local Python 3.10+, Pillow, and NumPy. Supporting scripts
   make no network or image-generation calls. Respect host tool contracts.
 metadata:
-  version: "1.7.0"
+  version: "1.7.1"
 ---
 
 # Image Gen Soul
@@ -34,7 +34,7 @@ click controls and pointer cursors.
 
 Before any website or app UI mockup, apply section 12 and guides/brand-first.md: ask about the site and tone, present references, then create and capture the HTML brand kit. Keep marketing and product briefs separate using guides/market-product.md.
 
-For an existing-site or page redesign, use the referenced [REDESIGN sub-skill](skills/redesign/SKILL.md). Audit the current site, create or verify its combined brand kit, and generate an inspected UI variation before implementation.
+For an existing-site, page or interactive-component redesign, use the referenced [REDESIGN sub-skill](skills/redesign/SKILL.md). It covers navigation, modals, search, forms and distinctive custom controls, including their states and connected journeys. Audit the current behavior, create or verify its combined brand kit, and generate inspected UI and state variations before implementation. Preserve semantic controls and verify mouse and keyboard operation.
 
 ## 1. Determine the operation
 
