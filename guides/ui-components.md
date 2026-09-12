@@ -1,7 +1,8 @@
 # Make interfaces & components
 
-The required reference is a saved screenshot of a deliberately styled brand board: generated logo, live wordmark, imported font specimens, combined imagery and labeled palette together. Separate files or an unstyled documentation page do not satisfy the brand-kit step. See the composed-board requirements in the brand-first and brand-kit guides.
-Before generating a UI mockup, follow the brand-first workflow (see the companion guidance site): ask the user about the site, audience, main task and tone; present or request reference sites/images; resolve those choices; create and inspect an HTML brand kit with loaded fonts, the generated logo, an editable live-type wordmark and coordinated imagery. Attach a screenshot of that kit to the mockup call. Do not skip these steps or invent answers that the user has not delegated.
+Before generating a UI mockup, use the [brand-first workflow](brand-first.md). Reuse the established answers about the site, audience, main task and tone; ask about missing decisions and present reference sites or images before generation.
+
+Create a styled HTML board combining the generated logo, live wordmark, imported font specimens, coordinated imagery and labeled palette. Capture it after the fonts and images load, inspect the result and attach that screenshot to the mockup call. Loose files and an unstyled document do not replace the combined reference.
 
 Write the marketing brief and product UI brief separately. The marketing and product guide (see the companion guidance site) explains their different goals, prompts and verification. The product mockup must address actual task states, not just an attractive landing page.
 

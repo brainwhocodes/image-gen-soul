@@ -5,3 +5,4 @@ __pycache__/
 .env.*
 job/
 output/
+node_modules/

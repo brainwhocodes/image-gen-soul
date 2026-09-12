@@ -2,13 +2,31 @@
 
 A reference-driven skill for image generation, brand art, UI concepts, plain HTML/CSS websites, font selection, theme tokens and measured color correction.
 
+It also includes a [writing guide](guides/writing.md) for concrete marketing copy and usable interface text. The guide adapts practices from [OMP Writing](https://github.com/bnivanov/omp-writing-skills), with optional cliché and AST checks. Source credits and licenses are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
 Start with your images. Preserve their visual language while making meaningful variations with different people, objects, items or scene elements. Describe what stays and name what changes. The skill carries that intent through prompting, generation, inspection, correction and implementation. It has no default aesthetic, reference library or fixed palette.
 
 [Twelve working sites](https://soul.brainwhocodes.rocks/worlds/) · [Composed brand kits](https://soul.brainwhocodes.rocks/brands/) · [Companion field guide](https://soul.brainwhocodes.rocks/) · [Interface rules](https://soul.brainwhocodes.rocks/guides/interface-rules/) · [Download the skill](https://soul.brainwhocodes.rocks/downloads/image-gen-soul.zip)
 
 ## Install
 
-Clone this repository into a folder named `image-gen-soul`:
+Install with the [Vercel skills CLI](https://github.com/vercel-labs/skills):
+
+```bash
+npx skills add brainwhocodes/image-gen-soul --skill image-gen-soul
+```
+
+Run the command in the project where you want to use the skill. The CLI lets you choose your coding agents and installation method. For a Codex project, add `--agent codex`. Add `--global` only when you want a user-wide installation. Use `--copy` if you prefer copied files to symlinks.
+
+Preview the available skill without installing:
+
+```bash
+npx skills add brainwhocodes/image-gen-soul --list
+```
+
+The repository is one skill package with a root `SKILL.md`. REDESIGN is bundled under `skills/redesign/` and referenced by the core; install `image-gen-soul` as a whole so its relative guide links continue to work. No website code or artwork is installed.
+
+For manual installation, clone the repository:
 
 ```bash
 git clone https://github.com/brainwhocodes/image-gen-soul.git
@@ -69,6 +87,8 @@ The companion site's [worked redesign](https://soul.brainwhocodes.rocks/redesign
 | [guides/page-mockups.md](guides/page-mockups.md) | Navigation coverage, generated style alternatives and page-by-page design before code |
 | [guides/market-product.md](guides/market-product.md) | Separate marketing and product UI briefs and journeys |
 | [guides/ui-components.md](guides/ui-components.md) | Concepts translated into real controls |
+| [guides/writing.md](guides/writing.md) | Brand voice, supported claims, action labels and copy review |
+| [templates/copy-brief.md](templates/copy-brief.md) | Audience, offer, evidence, protected facts and state copy |
 | [guides/fonts-tokens.md](guides/fonts-tokens.md) | Font research, palettes and CSS roles |
 | [guides/aspect-ratios.md](guides/aspect-ratios.md) | Recompose for each format |
 | [guides/content-images.md](guides/content-images.md) | Coordinated content imagery |
@@ -109,6 +129,15 @@ The palette helper uses a 5-bit RGB histogram and six weighted clusters over a s
 The text-size floor is a project rule, not a WCAG-prescribed minimum. Read the core skill for qualifications and standards links. Automated checks are evidence for specific requirements, not a claim of complete accessibility conformance.
 
 ## Develop and verify
+
+The optional copy checks need Node.js. Install their pinned dependency locally, then pass a Markdown draft containing the reader-facing copy:
+
+```bash
+npm install --prefix scripts/writing --ignore-scripts
+node scripts/writing/lint.mjs draft.md
+```
+
+The checker reports patterns for review. Preserve useful lists and exact domain terms when a finding is a false positive; record the reason. These checks do not determine authorship or prove that claims are true. See the writing guide for extraction, review and preservation rules.
 
 Edit the core and focused guides directly in this repository. Run the validation command and synthetic Python tests above before committing. The test suite creates temporary test images; it never uses the companion site's artwork or invokes a generator. GitHub Actions runs the same checks on pushes and pull requests.
 

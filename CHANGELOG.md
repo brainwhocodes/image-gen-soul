@@ -1,3 +1,9 @@
+# 1.8.0
+
+Documents and verifies installation with the Vercel skills CLI. The root SKILL.md identifies one complete image-gen-soul package with REDESIGN and supporting guides bundled. Adds a CI discovery and isolated Codex installation check.
+
+Adds an OMP-informed writing guide, copy brief and optional cross-platform cliché/AST checks with source attribution and licenses. Requires supported claims, brand-specific voice, usable state copy and review of formulaic prose. Preserves original generation prompts and artwork evidence during copy edits. REDESIGN 1.2.0 routes copy-only requests without forcing image generation.
+
 # 1.7.1
 
 Expands REDESIGN to navigation, modals, search, forms and individual custom controls. Requires a component and state inventory, brand-conditioned state mockups before implementation, distinctive visual treatments with semantic behavior, and mouse/keyboard checks of connected journeys. Adds guidance for focus and dismissal, search results and suggestions, validation, recovery and truthful submission outcomes, with WAI implementation references. REDESIGN sub-skill version 1.1.0.

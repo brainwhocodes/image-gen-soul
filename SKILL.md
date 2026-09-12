@@ -3,7 +3,7 @@ name: image-gen-soul
 description: >-
   Create reference-driven images and production assets from one image or a series
   of project images. Use for close recreations, variations, prompt expansion,
-  brand kits, UI concepts, semantic websites, CSS tokens, social media posts,
+  brand kits, UI concepts, semantic websites, website copy, CSS tokens, social media posts,
   website section backgrounds, flyers, campaign content,
   foreground/background layers, and Python-only color correction. Analyze the
   actual selected references, preserve their defining visual choices, adapt the
@@ -12,9 +12,10 @@ description: >-
 compatibility: >-
   Requires image viewing. Generation requires a host-provided image tool;
   correction requires local Python 3.10+, Pillow, and NumPy. Supporting scripts
-  make no network or image-generation calls. Respect host tool contracts.
+  make no network or image-generation calls. Optional writing checks use Node.js
+  and an explicitly installed local dependency. Respect host tool contracts.
 metadata:
-  version: "1.7.1"
+  version: "1.8.0"
 ---
 
 # Image Gen Soul
@@ -35,6 +36,8 @@ click controls and pointer cursors.
 Before any website or app UI mockup, apply section 12 and guides/brand-first.md: ask about the site and tone, present references, then create and capture the HTML brand kit. Keep marketing and product briefs separate using guides/market-product.md.
 
 For an existing-site, page or interactive-component redesign, use the referenced [REDESIGN sub-skill](skills/redesign/SKILL.md). It covers navigation, modals, search, forms and distinctive custom controls, including their states and connected journeys. Audit the current behavior, create or verify its combined brand kit, and generate inspected UI and state variations before implementation. Preserve semantic controls and verify mouse and keyboard operation.
+
+For reader-facing copy, apply [the writing guide](guides/writing.md) and section 14. Set the audience, supported offer, voice and action before drafting. Use realistic copy in mockups, keep product labels tied to implemented behavior, and preserve exact generation records when editing prose. A copy-only rewrite does not require new images.
 
 ## 1. Determine the operation
 
@@ -377,3 +380,14 @@ Explain the actual offer through descriptive product content, relevant differenc
 Carousels require visible Previous/Next controls, direct item selection, a position announcement and Show all. No auto-advance or drag-only behavior. Preserve native keyboard operation and focus, correct selected states, pointer cursors, readable type and contrast. Keep essential comparison and offer details outside hidden slides; show all content without JavaScript.
 
 Use guides/market-product.md and templates/site-brief.md to record the content and layout plan. Inspect full-page desktop and narrow screenshots, section transitions, 200% text, carousel states and item-specific CTA destinations. Do not call a sparse hero plus repeated features a complete marketing site.
+
+
+## 14. Write and review the copy
+
+Use guides/writing.md and templates/copy-brief.md for marketing, product and documentation text. Reuse the established audience and tone, inventory supported claims, and write the next action before polishing the page. Each section must add a useful product detail, example, explanation or decision. Preserve useful depth while removing filler.
+
+Avoid stock promises, manufactured urgency, fictional testimonials presented as evidence, decorative sentence fragments and repeated slogan patterns. Use clear verbs and subject-specific details. Keep exact technical terms, necessary qualifications and each brand's voice. Do not introduce slang, fake experience or random cadence to disguise authorship.
+
+Keep button labels, form errors, search states and confirmations consistent with the working behavior. Supply realistic text to the UI mockup prompt, then implement it as live text. A copy edit must not alter historical generation prompts, image records, source attributions, recipes or timestamps.
+
+Review the complete text, run the optional writing checks when available, and inspect every finding in context. Record specific exceptions for legitimate lists or terminology; do not silently disable a rule to claim a clean run. Check the final copy against the product, preserve protected facts and verify wrapping and affected interactions at narrow widths and enlarged text.

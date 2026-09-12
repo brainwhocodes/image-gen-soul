@@ -1,0 +1,7 @@
+{
+  "name": "image-gen-soul-writing-checks",
+  "private": true,
+  "type": "module",
+  "description": "Optional OMP cliche and Slopless AST checks for reader-facing copy",
+  "dependencies": { "slopless": "0.2.36" }
+}
