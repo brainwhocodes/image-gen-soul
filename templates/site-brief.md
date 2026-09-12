@@ -1,59 +1,46 @@
 # Website job contract
 
-## Purpose and output
+Fill only fields relevant to this job. Procedures live in the linked guides;
+record decisions and evidence here rather than copying their instructions.
 
-Record the audience, primary action, exact copy, delivery format and required pages. Use semantic HTML, plain CSS custom properties and minimal vanilla JavaScript unless the user specifies a framework. Distinguish a fictional or local demo from a real service.
+## Direction
 
-## Site, tone and reference check
+- Product/site, audience and main task:
+- Tone, supplied answers, delegated choices and unresolved questions:
+- References: verified URL/file, role, preserve/change/avoid choices:
+- Technology, delivery scope and local/fictional status:
 
-Before UI mockups, record the user's answers about site type, audience, primary task, tone and constraints. Present reference sites or images and record the selected roles. Reuse prior answers; do not invent unresolved choices.
+See [Brand first](../guides/brand-first.md) and [Reference workflow](../guides/prompt-workflow.md).
 
-## Composed brand kit before mockups
+## Content and navigation
 
-Record verified font imports and candidates, the actual generated logo prompt/source, live wordmark and coordinated generated imagery. Design a unified HTML board that visibly combines the logo, font specimens, image composition and labeled palette. A plain documentation page or separate files are insufficient. Verify loaded fonts/assets, inspect and save the actual screenshot, and record its hash.
+- Marketing promise, supported evidence and conversion:
+- Product task, data source, states and real outcome:
+- Reading sequence; each section's visitor question, content, asset and next action:
+- Global, local and product navigation; unchanged scope boundaries:
 
-## Separate marketing and product briefs
+See [Marketing and product](../guides/market-product.md),
+[Content hierarchy](../guides/content-hierarchy.md) and [copy brief](copy-brief.md).
 
-Marketing: useful promise, primary conversion, section purposes, offer details, objections and final action. No fabricated endorsements or statistics.
+## Brand evidence
 
-Product: primary task, data, controls, initial/changed/empty/error/completion states, and the real or explicitly local outcome. Attach the inspected brand screenshot to each separate mockup call and record its hash. Correct invented mockup copy and data in the implementation.
+- Verified font candidates, selected imports and tokens:
+- Generated logo, live wordmark and standalone image records:
+- Composed HTML board, inspected screenshot, capture time and hash:
+- Sampled palettes versus semantic colors; correction decisions:
 
-## Vertical content and layout plan
+## Page and asset evidence
 
-Record the intended reading sequence, each visitor question and why its answer belongs at that point. Distinguish the main offer from catalogs and technical references. Map global navigation, page sections and example-product navigation separately. For a brand-kit case study, plan the brief, one complete board, design decisions and the transition to the working site.
+Complete [page-inventory.json](page-inventory.json) for navigation coverage,
+structural alternatives, selected generated references, continuations, significant
+states, separate embedded images and implementation comparisons.
 
-Before implementation, complete the navigation inventory in `templates/page-inventory.json`. Map every link to a page, anchor, existing shared document, external URL, download or action. Identify the actual generated mockup and continuation covering every designed page and navigation section. Record the brand screenshot hash, exact attachments and prompts, structural variation axes, inspected alternatives, chosen direction, selection reason and review time. Mark genuinely unchanged shared documentation explicitly. Use the kit and selected direction to generate every new page before writing its layout. Do not substitute an HTML screenshot or a single homepage concept for this coverage.
+## Verification and delivery
 
-For every section record: visitor question, actual copy/data, supporting artwork or demonstration, pattern chosen from the mockup, and next action. Include offer descriptions, meaningful differences, use cases, comparison or sample output, practical objections and a relevant conversion path. Identify observed mockup decisions versus proposed continuations.
+- Observed desktop, 320px reflow and 200% text checks:
+- Measured contrast, minimum text, cursors, targets and keyboard focus:
+- Complete navigation, search, form, dialog and product journeys as applicable:
+- Final files, comparisons, downloads and remaining limitations:
+- Existing publishing authorization and preserved crawler/hosting requirements:
 
-Choose among grids, editorial sequences, portrait galleries, tables, programmes, timelines and usable carousels according to the material. Avoid repeating one template throughout the page or across different products. Use vertical space to add information, not empty padding. Keep type readable and reading order logical.
-
-For a carousel, record Previous/Next, direct selection, position status, Show all, focus behavior, boundaries and the no-JavaScript fallback. Do not auto-advance. Essential decision content remains visible outside the carousel.
-
-## Reference roles
-
-Assign verified current-job images to treatment, color, composition, subject and typography roles. Choose one main anchor per role; record conflicts without averaging unrelated styles. Inspect every selected reference.
-
-## Preserve, change and avoid
-
-Record the material, edge behavior, lighting, color relationships and subject properties that must survive. Name permitted changes and targeted exclusions. Preserve actual source images and generation prompts as provenance.
-
-## Interface contract
-
-- No emoji icons; no eyebrows above headings.
-- 16px body text and a 14px floor across all viewports, labels, captions and code.
-- At least 4.5:1 text contrast and 3:1 essential control, state and focus contrast.
-- Solid surfaces for text where artwork would make contrast uncertain.
-- Labeled mouse-click controls instead of sliders or dragging requirements.
-- Pointer cursors, native keyboard behavior, visible focus and accurate states.
-- Prefer 44px control targets; verify 320px reflow and 200% text resizing.
-
-## Artwork and tokens
-
-Inventory every content image pictured in the selected mockups. Map page/region to a separately generated image file and its actual prompt, references, raw output, dimensions and crop needs. Generate new or changed images individually before implementation, using the mockup for composition and the kit/original for treatment. Never crop imagery out of a UI mockup. Mark matching, previously generated kit assets as reused with their existing provenance. Inspect every separate image against its mockup region.
-
-Map hero, supporting, card and background images to their own aspect ratios and composition needs. Keep exact text and controls in code. Record each actual prompt, raw image, dimensions, palette measurements, correction decision, numeric recipe and final export. Choose real, verified font candidates. Explain sampled colors versus curated semantic roles.
-
-## Delivery checks
-
-Exercise mouse and keyboard journeys, forms, dialogs, comparison buttons, media controls and error states. Inspect desktop and mobile. Measure computed text sizes and actual contrast. Deliver complete files and accurately report what was tested. Publish only within the user's authorized scope.
+See [UI implementation](../guides/ui-components.md) and [Interface rules](../guides/interface-rules.md).

@@ -39,7 +39,7 @@ Never rewrite an exact historical image prompt, generated asset record, referenc
 
 ## Review and lint before delivery
 
-Read headings in sequence, then read each page as a visitor. Check the offer against the working product and trace the main action through its labels, errors and result. Read important paragraphs aloud to catch repeated cadence and unclear references. Preserve the no-emoji, no-eyebrow, text-size, contrast, pointer and keyboard rules from the core skill.
+Read headings in sequence, then read each page as a visitor. Check the offer against the working product and trace the main action through its labels, errors and result. Read important paragraphs aloud to catch repeated cadence and unclear references. Preserve the no-emoji, no-eyebrow, text-size, contrast, pointer and keyboard rules in [Interface rules](interface-rules.md).
 
 The optional writing checker runs OMP's cliché patterns and the pinned Slopless AST checker. It needs Node.js and a one-time local dependency install; the image and color workflows still use their existing tools.
 

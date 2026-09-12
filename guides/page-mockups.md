@@ -1,6 +1,6 @@
 # Generate the site page by page
 
-Use the completed brand kit as an actual image attachment before generating interface mockups. This is a design-before-code workflow. Generating artwork alone, describing a layout in prose, or taking a screenshot after coding does not satisfy it.
+Use the completed [brand kit](brand-first.md) as an actual image attachment before generating interface mockups. This is a design-before-code workflow. Generating artwork alone, describing a layout in prose, or taking a screenshot after coding does not satisfy it. After selecting and preparing the required assets, continue with [UI implementation](ui-components.md).
 
 ## Map every navigation destination
 

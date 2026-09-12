@@ -1,76 +1,61 @@
-# Make interfaces & components
+# Implement the selected interface
 
-Before generating a UI mockup, use the [brand-first workflow](brand-first.md). Reuse the established answers about the site, audience, main task and tone; ask about missing decisions and present reference sites or images before generation.
+Start with an inspected mockup and its [page/asset inventory](../templates/page-inventory.json).
+If those are missing, return to [Brand first](brand-first.md) and [Page mockups](page-mockups.md)
+before writing a new layout. For an existing component use [REDESIGN](../skills/redesign/SKILL.md).
+Apply [Interface rules](interface-rules.md) throughout implementation and verification.
 
-Create a styled HTML board combining the generated logo, live wordmark, imported font specimens, coordinated imagery and labeled palette. Capture it after the fonts and images load, inspect the result and attach that screenshot to the mockup call. Loose files and an unstyled document do not replace the combined reference.
+## Translate the full composition
 
-Write the marketing brief and product UI brief separately. The marketing and product guide (see the companion guidance site) explains their different goals, prompts and verification. The product mockup must address actual task states, not just an attractive landing page.
+Use live text, semantic HTML and portable CSS custom properties. Follow the user's
+framework choice; use minimal JavaScript for behavior. Map the selected mockup's
+columns, image scale, density, section sequence and transitions into the full page.
+Use actual drafted content from the [marketing/product briefs](market-product.md),
+not repeated short features or empty padding. Preserve logical DOM reading order.
 
-Use generated interface imagery to investigate visual direction. Build the actual controls with semantic HTML, CSS and a small amount of JavaScript when behavior requires it.
+Each image slot must resolve to its inspected standalone generated asset or a
+matching existing asset with true provenance. A UI screenshot cannot supply live
+controls or be sliced into production artwork. Compare the implemented page to its
+selected generated reference and record necessary responsive or accessibility changes.
 
-Generate the content images shown in the selected mockup as separate standalone assets before implementing them. Maintain a page/region-to-file asset map. Attach the mockup for composition and the kit or original for treatment, and explicitly exclude surrounding UI from each individual image prompt. Do not crop the mockup, use screenshots as artwork, or substitute generic placeholders. Already generated kit assets may be reused where they are the actual matching images; any new or changed picture requires its own generation and inspection.
+## Define the component contract
 
-Follow the interface rules (see the companion guidance site) throughout the implementation. The concept below predates these rules and is retained as historical generation evidence; do not copy its small lettering or drawn progress controls into the live interface.
-
-## Prompt the product after the brand kit
-
-> Use Image Gen Soul and attach the inspected brand-kit screenshot. Carry its generated logo, selected fonts, palette and content imagery into a product interface for the agreed primary task. Show the initial state and the key result or validation state. Keep the marketing promise in a separate marketing-page prompt. Use readable live-type intentions, labeled click controls, no sliders or emoji icons, and no eyebrow labels. Record the actual kit attachment and inspect the returned concept before implementation.
-
-The twelve complete examples (see the companion guidance site) each include a working product, a separate marketing page and an exact-prompt process walkthrough.
-
-## Historical concept
-
-> Use image-gen-soul. Use the attached cosmic reference for dark navy, icy blue edges and a restrained ember accent. Design a square concept sheet for an ambient listening interface named ORBITAL. Include one main listening area and a small row of component states. Keep title, progress, play and volume controls distinct. Use calm spacing and flat surfaces. Avoid ornamental dashboard panels. Label this as a static UI concept.
+Record purpose, trigger, label, data source, destination or endpoint, states,
+transitions, keyboard/focus behavior, responsive placement and actual outcome.
+Inspect expanded and failure states, not just the resting view. Preserve entered
+values and useful existing behavior unless the brief changes them.
 
 
+Custom controls are welcome. Derive their composition, typography, imagery, shape and feedback from the brand kit and the task. Explore an editorial search field with categorized suggestions, a product finder with removable filter chips, an illustrated navigation panel, a compact command-style search dialog or a form with a live summary when appropriate. Choose the treatment for this product; these examples are options, not a repeated template. A distinctive search bar can be a major design feature.
 
-The generated concept is an image. Its controls cannot play audio. The Orbital example (see the companion guidance site) contains a separately implemented interactive sound demo and real controls.
+Use semantic HTML as the foundation and style or compose it freely. Keep familiar text editing, selection, navigation and submission behavior. Use actual links, buttons, inputs, labels and dialogs; add ARIA only for semantics or states the native elements do not provide. A clickable visual shell must contain working controls. Maintain visible labels, focus, pointer cursors, contrast and usable targets in every custom treatment.
 
-## Carry the mockup through the whole page
+- **Navigation:** design desktop, narrow-screen, active destination and expanded states. Preserve real destinations and expose the current page. Use buttons to expand groups and links to navigate; synchronize expanded state and keep collapsed content out of the focus order. Support touch/click and keyboard without requiring hover. Keep sticky navigation from obscuring content or focus. Ordinary site links do not need application-menu roles. Follow the [WAI disclosure navigation example](https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/examples/disclosure-navigation/) for disclosure behavior; a modal overlay also follows the dialog rules below.
+- **Modals and dialogs:** design the trigger, opening, content, close/cancel and result states. Give the dialog an accessible name, sensible initial focus and a visible close control. Use native modal dialog behavior where suitable; contain keyboard focus, make the background inert, allow Escape dismissal and restore focus to the opener or a logical next target. Keep long content scrollable and actions reachable on small screens. Define how cancellation treats unsaved input. See the [WAI modal dialog pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/).
+- **Search:** design the actual query and results journey: idle, focused, typed query, suggestions when useful, loading for asynchronous data, results, no matches, failure/retry, selection and clear/reset. Provide a labeled input, an explicit mouse-usable submit action and Enter support. Make suggestions and filter chips operable by mouse and keyboard, report results changes without moving focus unexpectedly, and preserve useful query/filter state when navigating back. Define the real search corpus and matching behavior. Use the [WAI combobox pattern](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/) when the field has an interactive suggestion popup; preserve normal input editing and implement the pattern's arrow, Enter and Escape behavior. A simple search field with a results page does not need combobox roles.
+- **Forms:** design labels, instructions, grouped fields, required/optional treatment, filled values, validation, submitting, failure/retry and success. Use appropriate input types and autocomplete where applicable. Associate errors with fields, explain how to fix them, retain entered values and provide an error summary when useful. Communicate progress and outcomes accessibly, prevent duplicate submissions and handle server errors as well as client validation. See [WAI form notifications](https://www.w3.org/WAI/tutorials/forms/notifications/). Show success only after the stated operation succeeds; label browser-only demonstrations and describe their actual local result.
 
-Before coding, follow the page-by-page mockup guide (see the companion guidance site). Map every navigation destination, generate actual brand-conditioned style variations, inspect and select a direction, then generate each page and significant continuation using the kit and selected mockup. A single landing-page image cannot stand in for every destination. Never generate evidence retroactively from an already-built page or merely recolor the same template across brands.
+Apply only states and features relevant to the component. Specify the source of data and any backend dependency before implementation; visual invention does not create search indexing, authentication, bookings or message delivery. Preserve working integrations. If an integration is unavailable, describe the limitation and implement an explicitly local demonstration only when that fits the brief.
 
-Inspect the mockup’s supporting sections as well as its hero. Plan a full vertical sequence with concrete content, varied image scale and layouts suited to the task. Grids, portrait galleries, comparison tables, editorial spreads, timelines and click-controlled carousels are options, not a checklist to apply everywhere. Follow the marketing and product guide for content depth, carousel accessibility and item-specific conversion paths. A page with only a hero and repeated short features is incomplete.
+## Verify complete journeys
 
-## Translate visual decisions into code
+Test the actual implementation with mouse and keyboard, at desktop and 320px,
+and with 200% text resizing. Inspect every affected page and dynamic state for the
+font, contrast, cursor, target, focus and reflow rules. Screenshots alone do not
+prove interaction behavior or complete accessibility conformance.
 
-The image can suggest contrast, spacing rhythm, edge shape and emphasis. The code must add the things an image cannot prove: keyboard focus, labels, state changes, error messages, readable text and responsive layout.
+- Follow every navigation destination and section anchor. Open and close groups,
+  check active/expanded state, and confirm the narrow menu remains usable.
+- Open dialogs, traverse focus, close with the visible control and Escape, and
+  confirm focus restoration. Test long content and a narrow viewport.
+- Search for a match and no match; select a result, clear/reset, change filters
+  and return without losing useful state. Test suggestion keyboard behavior if present.
+- Submit invalid and valid forms. Inspect pending, failure/retry and completion
+  states where relevant, retained values, field errors and result announcements.
+- Exercise selected, empty and boundary states for the product task. Verify that
+  a named item action operates on that item and that a local demo states its limits.
 
-```html
-<button type="button" class="play-button" aria-pressed="false">
-  Play ambient tone
-</button>
-<div role="group" aria-label="Volume">
-  <button type="button" aria-label="Lower volume">Quieter</button>
-  <output aria-live="polite">25%</output>
-  <button type="button" aria-label="Raise volume">Louder</button>
-  <button type="button" aria-pressed="false">Mute</button>
-</div>
-```
-
-```css
-.play-button {
-  color: var(--color-background);
-  background: var(--color-accent);
-  border: 1px solid currentColor;
-  padding: .85rem 1.2rem;
-  font: inherit;
-  font-size: 1rem;
-  min-height: 44px;
-  cursor: pointer;
-}
-.play-button:focus-visible {
-  outline: 3px solid var(--color-text);
-  outline-offset: 4px;
-}
-```
-
-## Ask for all the states
-
-> Implement the chosen listening concept in plain HTML and CSS with vanilla JavaScript. Add stopped and playing states, keyboard activation, volume buttons instead of a slider and an explicit message if audio is unavailable. Start audio only after the visitor presses Play. Keep the text and buttons live. Use CSS custom properties, not a framework-specific theme object.
-
-## A small component contract
-
-For each component, record its purpose, states, data, keyboard behavior and narrow-screen behavior. A button needs a meaningful action; a form needs validation and a real or explicitly local outcome. A screenshot does not establish these behaviors.
-
-In these examples, the retreat planner and studio brief generator work entirely in the browser. They do not send enquiries or pretend to make bookings. The sound demo synthesizes a quiet tone locally; it is not a recorded commercial soundtrack.
+Compare full-scroll screenshots with the chosen concepts and fix material drift.
+Keep generated references, before captures and implemented screenshots distinct.
+Record observed checks, inaccessible integrations or missing assistive-technology
+coverage; refresh affected downloads and previews. Report only outcomes actually verified.

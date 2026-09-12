@@ -245,6 +245,9 @@ it. The helper does not import LUT files. Do not add filters by default.
 
 Implementation sources: the Oklab conversion is based on Björn Ottosson's
 published transform, and color-profile/orientation handling uses Pillow's
-ImageCms and ImageOps interfaces. See the source URLs in `README.md` at the skill
-root. The workflow decisions, fitting bounds, and QA requirements are authored
+ImageCms and ImageOps interfaces. See [Oklab](https://bottosson.github.io/posts/oklab/),
+[ImageCms](https://pillow.readthedocs.io/en/stable/reference/ImageCms.html) and
+[ImageOps](https://pillow.readthedocs.io/en/stable/reference/ImageOps.html).
+Use [Production layouts](production-layouts.md) for the final export and exact overlays.
+The workflow decisions, fitting bounds, and QA requirements are authored
 for this skill; they are not promises of automatic visual equivalence.

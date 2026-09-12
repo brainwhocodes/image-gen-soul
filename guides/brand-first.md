@@ -12,8 +12,13 @@ Wait for answers to the unresolved site/tone questions and the user's reference 
 
 ## Build the brand kit
 
-1. Write the audience, product promise, voice, primary task and preserve/change contract. Name the original image used as the treatment anchor. Separate the marketing goal from the product task.
-2. Search for typefaces that fit those qualities, preferably on Google Fonts. Compare real candidates with the same headline, paragraph, numerals and controls. Verify the official family page, actual styles and working import. Avoid choosing a familiar default merely because it is common in AI-generated sites. No font is inherently bad; the choice must have a reason connected to this product.
+If the brief has no supplied visual image, state that the initial original assets
+will be generated from the agreed direction. Reference sites can supply interaction
+or content guidance without supplying a color target. Inspect the initial outputs
+and use them as anchors for subsequent variations; do not invent a missing original.
+
+1. Write the audience, product promise, voice, primary task and preserve/change contract. Name the original image used as the treatment anchor. Separate the [marketing goal from the product task](market-product.md).
+2. Follow [Fonts and tokens](fonts-tokens.md) to research typefaces that fit those qualities, preferably on Google Fonts. Compare real candidates with the same headline, paragraph, numerals and controls. Verify the official family page, actual styles and working import. Avoid choosing a familiar default merely because it is common in AI-generated sites. No font is inherently bad; the choice must have a reason connected to this product.
 3. Generate an original logo concept using image generation when the brief requests a generated logo. Attach the selected brand imagery or original treatment reference. Describe a specific symbol idea connected to the product; do not substitute a stock icon, emoji or a quick generic line glyph. Inspect the actual returned logo for coherence and small-size clarity. Keep its raw output and exact prompt. Pair the generated symbol with a live-type wordmark using the chosen font. If editable vector artwork is required, produce that as a separate, faithful production adaptation and identify it honestly; a raster concept is not an SVG. Use an exact supplied mark when required.
 4. Generate coordinated product, placeholder or editorial images from the selected original. Change the objects, people or scene as the brief requires. Record exact prompts, source roles, raw files, dimensions, palettes and finishing decisions. Inspect the images before using them in the kit.
 5. Compose a designed brand presentation in HTML/CSS with real font imports. Combine the generated logo, live wordmark, expressive typography specimens, a coordinated image composition, and labeled palette swatches in the same board. The board itself must express this brand: choose its composition, surfaces, image scale, framing, spacing and graphic motifs from the reference and product. Give imagery substantial visual space and use type as part of the composition. A plain documentation page, a list of fonts, isolated image cards, or a grid with only its colors changed does not satisfy this step. Keep prose explanations, CSS textareas, tool controls and implementation notes outside the captured board. Show semantic color roles separately from measured artwork colors in the companion details. Keep every label at least 14px and all live text readable; use an additional detail board if necessary instead of shrinking everything.
@@ -21,24 +26,19 @@ Wait for answers to the unresolved site/tone questions and the user's reference 
 
 Use image generation for the board only when HTML rendering is unavailable. Label the result as a concept, record the font choices separately, and do not claim that generated lettering proves the fonts were loaded. Deliver an editable kit when the host later supports it.
 
-## Use the kit as an actual image reference
+## Handoff to page design
 
-Attach the inspected brand-kit screenshot to the mockup generation call. A filename in prose alone is not image conditioning. Specify the role of the kit and any original reference: the kit controls identity, type direction, color roles and imagery; the original controls a named visual treatment when still needed. Use the same reviewed kit for marketing and product concepts, but write separate prompts for their different jobs.
+Save the editable board, inspected screenshot and screenshot hash beside the
+generated logo and imagery. Keep exact prompts, reference roles, raw/final files,
+font source links, semantic tokens and measured palettes with the current job.
+Record any intentionally skipped correction. Rebuild and recapture when the
+identity or board composition changes.
 
-Record the kit screenshot hash in each mockup job. Generate no UI mockup before that kit exists. Inspect the returned mockup and record mismatches honestly. Implement exact fonts, logo, words and color tokens in HTML/CSS rather than reproducing raster mistakes.
+For a case-study page explaining the kit, follow [Content hierarchy](content-hierarchy.md):
+brief, one complete board, useful design decisions, then the working example.
+The editable board and its explanatory page have different jobs.
 
-## Generate every navigation page before coding
-
-After capturing the kit, follow `guides/page-mockups.md`. Inventory every navigation link and its destination. Each distinct designed page needs its own generated mockup conditioned on the actual kit; hash links need coverage of the destination section in that page's mockup or a separate continuation. A homepage concept does not cover a shop, item detail, pricing, about, dashboard or checkout page. Shared components are reusable; a repeated page composition is not a substitute for page-specific design.
-
-Explore composition variations when testing different styles. Keep the logo, approved fonts, semantic palette and image treatment fixed while changing hierarchy, navigation placement, grid structure, image scale, density, section order and the way the offer is presented. Generate and inspect the alternatives before selecting one. A palette swap, a renamed template or a screenshot of already-written HTML is not an image-generated design variation.
-
-Choose a direction using existing user preferences or delegated judgment, then use that selected mockup together with the brand-kit screenshot to generate the other pages and substantial lower-page continuations. Do not implement a new page or materially different section before its generated reference has been inspected. Record the real prompt, attachments, output, selection reasons and page coverage. Compare the implemented page with its selected mockup and correct drift before delivery.
-
-Generate the images inside each selected mockup separately before implementation. Inventory every hero, product, person, illustration, thumbnail and background; give each its own image-generation prompt and output file, using the mockup for composition and the kit/original for treatment. Never crop artwork out of a UI mockup or use the mockup itself as the working page. Reuse an already separately generated kit asset only when it is the intended matching image; new or changed images require fresh standalone generation. Record and inspect the asset map, exact prompts, raw outputs, dimensions and responsive crops. See guides/page-mockups.md for the complete asset workflow.
-
-## Keep the stages honest
-
-The order should be provable from files and records: reference choices, generated brand assets, rendered kit, mockup prompt with attached kit, generated mockup, implementation and verification. Reusable skill instructions contain the procedure, not this project's brand names, fixed palettes or artwork. Case studies belong to the companion site.
-
-Use the marketing and product guide (see the companion guidance site) to write the two briefs and inspect the 12 composed brand kits (see the companion guidance site) for examples.
+Attach the actual inspected screenshot through the image tool's supported reference
+mechanism; naming a file in prose is insufficient. Continue with [Page mockups](page-mockups.md)
+for destination coverage, alternatives and separate production images. A brand-kit-only
+request ends with the kit; do not generate or build an unrequested website.

@@ -96,7 +96,9 @@ compositing the supplied asset is preferable when exact fidelity is the point.
 A generative reconstruction is not a guaranteed identical duplicate.
 
 For a variation, freeze the relevant visual relationships and change the stated
-axis. A new subject does not automatically authorize new typography, new color
+axis. Name the original focal subjects and their replacements: different people,
+objects, items or scene elements. A barely perceptible change or recolor alone
+does not satisfy a meaningful variation unless the user requested that operation. A new subject does not automatically authorize new typography, new color
 grading, new lighting, or a different rendering method. A new format may require
 composition changes even when color and treatment stay locked.
 
@@ -142,3 +144,23 @@ photography” to a photographic reference by habit.
 
 If a result is wrong structurally, correct the offending instruction or edit
 that region. Color grading is not a substitute for fixing wrong construction.
+
+## Generate, inspect and retain evidence
+
+Use the actual selected references through the host's supported attachment mechanism.
+Keep inputs and raw outputs unchanged; use versioned paths. For prompt-only work,
+return the complete prompt with its reference requirements and do not generate.
+Record only real returned settings, dimensions and tool identifiers.
+
+Inspect the returned image at composition and detail scale. Confirm the named
+substitutions, invariants, subject count, physical construction, crop and copy-safe
+space. Repair structure before grading and preserve unaffected regions. Never
+automatically make the result brighter, cooler, smoother or more photographic.
+
+Use [Production layouts](production-layouts.md) for formats, series and exact
+overlays; use [Color workflow](color-workflow.md) only when comparing or correcting
+color. Retain actual prompts, attachment identities, raw/final files, dimensions,
+measurements, the correction decision and export checks in [job.json](../templates/job.json)
+or an equivalent job record. Guidance pages must distinguish originals from new
+variations and show the preserve/change choices and reproducible steps. An unknown
+original prompt stays unknown; a proposed reconstruction is labeled as a suggestion.

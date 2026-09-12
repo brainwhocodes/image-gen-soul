@@ -1,3 +1,16 @@
+# 2.0.0
+
+Make the main SKILL.md a concise task router and consolidate each procedure in one
+canonical guide. REDESIGN reuses the shared workflow and supports focused behavior
+repairs without unnecessary image generation. Keep the brand-first, per-page mockup,
+separate-image, writing, hierarchy and interface requirements.
+
+Merge `brand-kits.md` into `brand-first.md`; merge `aspect-ratios.md` and
+`content-images.md` into `production-layouts.md`. Move detailed UI requirements to
+`interface-rules.md` and reusable component-state contracts to `ui-components.md`.
+Remove companion-site brand defaults and historical concepts from reusable guides.
+Simplify the README and site-brief template; validate routing and portable package links.
+
 # 1.9.0
 
 Add a content-hierarchy guide and core rules for purpose-led section order, composed brand-kit case studies and scoped navigation. Extend REDESIGN to inspect and generate these structures and expanded/mobile menu states before implementation.
