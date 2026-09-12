@@ -1,3 +1,11 @@
+# 2.0.1
+
+Require aligned action rows across peer cards with unequal content and consistent
+input, dropdown and related button sizing. Cover wrapped labels, help/error tracks,
+intentional composition exceptions, intermediate widths and combined 320px/200%
+text checks. Route alignment repairs through UI implementation when they preserve
+the existing composition.
+
 # 2.0.0
 
 Make the main SKILL.md a concise task router and consolidate each procedure in one

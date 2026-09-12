@@ -6,7 +6,7 @@ description: >-
   state variations before implementation, and verify the connected journeys.
   Referenced sub-skill of Image Gen Soul; install the parent package together.
 metadata:
-  version: "2.0.0"
+  version: "2.0.1"
 ---
 
 # REDESIGN
@@ -19,7 +19,7 @@ form or custom control. It supplies no default style and requires no other desig
 
 For copy-only work, go to [Writing](../../guides/writing.md): preserve facts,
 routes and behavior; do not force replacement imagery. For a small behavior or
-accessibility repair that leaves the visual composition intact, use
+accessibility or alignment repair that leaves the visual composition intact, use
 [UI implementation](../../guides/ui-components.md) and verify the affected journey.
 A new or materially changed composition follows the design sequence below.
 

@@ -18,6 +18,16 @@ matching existing asset with true provenance. A UI screenshot cannot supply live
 controls or be sliced into production artwork. Compare the implemented page to its
 selected generated reference and record necessary responsive or accessibility changes.
 
+## Align repeated components and form rows
+
+Apply the [alignment rules](interface-rules.md#alignment-with-real-content) before
+polishing individual controls. Inventory peer cards and field groups, distinguish
+intentional composition offsets from accidental drift, and check their actual
+action/control edges. Use flexible content regions for bottom-aligned card actions
+and shared sizing tokens for equivalent inputs, dropdowns and buttons. Preserve
+these relationships when labels wrap or errors appear; stack the group when needed.
+Do not pad copy or constrain text to make a short-content screenshot line up.
+
 ## Define the component contract
 
 Record purpose, trigger, label, data source, destination or endpoint, states,
@@ -55,6 +65,8 @@ prove interaction behavior or complete accessibility conformance.
 - Exercise selected, empty and boundary states for the product task. Verify that
   a named item action operates on that item and that a local demo states its limits.
 
+Measure peer action baselines and control sizes with unequal content and field
+errors visible. Repeat at an intermediate width and at 320px with 200% text.
 Compare full-scroll screenshots with the chosen concepts and fix material drift.
 Keep generated references, before captures and implemented screenshots distinct.
 Record observed checks, inaccessible integrations or missing assistive-technology

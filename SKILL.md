@@ -11,7 +11,7 @@ compatibility: >-
   helpers require Python 3.10+, Pillow and NumPy. Optional writing checks use
   Node.js. The package supplies no generator, credentials, fonts or artwork.
 metadata:
-  version: "2.0.0"
+  version: "2.0.1"
 ---
 
 # Image Gen Soul
@@ -95,7 +95,8 @@ Follow this dependency order for new or materially redesigned layouts:
 
 Apply [interface rules](guides/interface-rules.md) to every UI route: no emoji icons
 or eyebrows; 16px body and 14px minimum text; measured 4.5:1 text and 3:1 essential
-control contrast; pointer cursors on interactive elements; no sliders or required
+control contrast; aligned peer-card actions and consistently sized form controls;
+pointer cursors on interactive elements; no sliders or required
 dragging; visible keyboard focus; 320px reflow and 200% text resizing. Videos need
 custom players styled to the site. The linked guide owns the details and standards.
 

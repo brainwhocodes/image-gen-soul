@@ -30,6 +30,31 @@ Do not implement range sliders, draggable comparison dividers, drag-only carouse
 - Use native semantics, visible focus, associated labels and accurate pressed/expanded states. Do not remove keyboard activation to implement a mouse interaction. Make selected states identifiable beyond color alone.
 - Avoid disabling controls silently at a bound. Keep the current value clear, clamp it safely and announce relevant changes. Do not autoplay sound.
 
+### Alignment with real content
+
+- Parallel cards in the same row must share a bottom action line even when titles,
+  descriptions or metadata have different lengths. Stretch the cards and let the
+  content region grow; anchor the final link or action group with flexible space.
+  Keep a consistent gap above actions. Do not simulate alignment with blank text,
+  fixed paragraph heights, truncation or absolute positioning over content.
+- Align the top and bottom edges of adjacent inputs, selects and related buttons.
+  Share typography, box sizing, border width, control height and vertical padding
+  through tokens. Normalize native input/select sizing explicitly. Keep textareas
+  taller when their purpose calls for it; an icon button may have its own size role.
+- Wrapped labels, help text and validation errors must not offset neighboring
+  controls. Give labels, controls, help/errors and action rows explicit layout
+  tracks; use grid/subgrid or equivalent structure where it helps. Keep each error
+  associated with its field. Allow the row to grow or stack without clipping text.
+- Equal size applies to equivalent controls, not every element on the page. Keep
+  intentional staggered, masonry and featured compositions from the selected
+  mockup; align comparable actions within each actual row or panel. Reflow removes
+  the need for shared baselines between components on different rows.
+- Verify with the longest actual heading, unequal descriptions, wrapped labels,
+  expanded disclosures, empty results and validation messages. Inspect rendered
+  bounding boxes after fonts and data load, then visually check alignment at
+  desktop, intermediate widths, 320px and 200% text, including the combined narrow
+  and enlarged-text case. Record intentional exceptions and fix accidental drift.
+
 ### Custom video players
 
 Every video included in a website must use a custom player designed in that site's visual language: its typography, colors, spacing, borders and button states. Do not expose the browser's default video control bar or embed an unstyled third-party player. Only include video when the page calls for it.
