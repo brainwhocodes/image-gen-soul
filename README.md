@@ -14,7 +14,7 @@ Clone this repository into a folder named `image-gen-soul`:
 git clone https://github.com/brainwhocodes/image-gen-soul.git
 ```
 
-Place that entire folder in your assistant's configured skills directory. Keep `SKILL.md`, `guides/`, `scripts/` and `templates/` together. If your assistant accepts project attachments instead, attach the core instructions and the relevant guide files. Repository hosting does not automatically install the skill in an assistant.
+Place that entire folder in your assistant's configured skills directory. Keep `SKILL.md`, `skills/`, `guides/`, `scripts/` and `templates/` together. If your assistant accepts project attachments instead, attach the core instructions and the relevant guide files. Repository hosting does not automatically install the skill in an assistant.
 
 The assistant needs image viewing and an image-generation tool to create images. Color measurement and correction require Python 3.10 or newer, Pillow and NumPy. The skill does not supply API keys or a hosted generator. The Python helpers make no network or image-generation calls.
 
@@ -43,6 +43,14 @@ For a website:
 For prompts only, explicitly ask for prompts only. For color correction only, provide an existing image and a color reference and ask for Python correction without image generation. A skill never implies permission to publish or send messages beyond the user's request.
 
 When implementing a selected mockup, generate its content images separately. Ask for an asset map, individual image prompts and standalone files for every new or changed hero, product, person, illustration or background. The mockup guides composition; it must not be cropped into production artwork or used as the page itself. Reuse matching kit images only with their existing standalone generation records.
+
+## Redesign an existing site
+
+Use the [REDESIGN sub-skill](skills/redesign/SKILL.md) with an existing page URL or screenshot. It audits the real page, verifies or creates the combined brand kit, generates a distinct UI variation before code, and generates any new images inside that mockup separately. It returns the actual variation and implements it when requested. Keep the package together so the sub-skill can resolve its parent and guides.
+
+> Use Image Gen Soul's REDESIGN sub-skill on this site. Preserve its purpose and useful behavior, create a brand kit if missing, generate a new UI variation, then build and verify it. Show the before, generated concept and implemented result.
+
+The companion site's [worked redesign](https://soul.brainwhocodes.rocks/redesign/) shows the actual before screenshot, combined HTML brand kit, two generated alternatives, page references and implementation. Site code and artwork remain outside this skill repository.
 
 ## What is inside
 

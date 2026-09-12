@@ -21,10 +21,13 @@ def main():
     references.update(['templates/site-brief.md', 'requirements.txt', 'README.md', 'CHANGELOG.md'])
     for relative in references:
         assert (ROOT / relative).is_file(), f'Missing referenced file: {relative}'
+    redesign = (ROOT / 'skills/redesign/SKILL.md').read_text(encoding='utf-8')
+    assert 'skills/redesign/SKILL.md' in core
+    assert all(phrase in redesign for phrase in ['name: redesign', 'before screenshot', 'brand-kit screenshot', 'standalone', 'before implementation'])
     json.loads((ROOT / 'templates/job.json').read_text(encoding='utf-8'))
     inventory = json.loads((ROOT / 'templates/page-inventory.json').read_text(encoding='utf-8'))
     assert {'navigation', 'pages', 'variations', 'brand_kit', 'image_assets'} <= inventory.keys()
-    for path in [ROOT/'SKILL.md', ROOT/'README.md', *(ROOT/'guides').glob('*.md')]:
+    for path in [ROOT/'SKILL.md', ROOT/'README.md', *(ROOT/'guides').glob('*.md'), ROOT/'skills/redesign/SKILL.md']:
         text = path.read_text(encoding='utf-8')
         assert 'C:\\Users\\' not in text and '/Users/' not in text, f'Local path in {path.name}'
         for target in re.findall(r'\]\(([^)]+)\)', text):

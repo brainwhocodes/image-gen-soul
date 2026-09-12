@@ -1,3 +1,7 @@
+# 1.7.0
+
+Adds the referenced REDESIGN sub-skill for existing websites and pages: audit real behavior, verify or create a combined brand kit, attach the before screenshot and kit to generate a structural UI variation, generate embedded artwork separately, and compare working implementation to the selected concept.
+
 # 1.6.0
 
 Requires an inventory of every navigation destination, actual brand-conditioned composition variations, selected directions, page-specific generated mockups and readable continuations before layout implementation. Requires separate generation of new images depicted inside mockups, with individual prompts, raw outputs and an asset map. Adds page coverage and mockup-to-code comparisons; explicitly rejects recolored templates, cropped mockup artwork and retroactive mockup evidence.
