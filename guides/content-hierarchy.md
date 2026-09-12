@@ -32,7 +32,10 @@ Keep primary navigation short and ordered by the site's purpose. Group secondary
 
 Within examples, preserve the product's brand and primary task while providing a consistent route to its brand kit, process and parent site. Keep this contextual navigation visually subordinate to the product. Do not make the parent site's marketing links look like transaction controls.
 
-Use links for destinations and buttons or semantic disclosures for expansion. Keep expanded state, control IDs and active-page state accurate. Closed content must leave the focus order. Support click, keyboard, Escape dismissal and appropriate focus restoration. Close transient menus after destination selection; keep sticky headers from obscuring focus or anchor targets. Custom styling must retain readable text, contrast, pointer cursors and usable targets.
+Apply the [navigation menu contract](ui-components.md#navigation-menus) for semantics,
+open/close behavior, focus and responsive transitions. The [menu alignment rules](interface-rules.md#navigation-menu-alignment)
+govern header tracks, dropdown edges, unequal columns, wrapped labels and controls.
+Keep these procedures canonical rather than creating a different contract for each page.
 
 ## Generate and verify the structure
 

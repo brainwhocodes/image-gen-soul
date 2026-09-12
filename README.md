@@ -49,6 +49,10 @@ you do not need to paste every workflow step into your request.
 > Preserve working behavior and identity, generate a structural variation before
 > code, then build and verify the selected direction.
 
+> Use image-gen-soul to fix this site's navigation and alignment. Preserve the
+> composition; align header controls, dropdown edges and actions with unequal
+> content. Check expanded menus, keyboard dismissal, long labels and mobile reflow.
+
 > Use image-gen-soul to correct this existing image against the attached color
 > reference without image generation. Keep the raw file and show the measured
 > recipe and before/after comparison. Skip a correction that does not help.
@@ -68,6 +72,8 @@ styled HTML brand-kit screenshot → generated page/state mockups → separate c
 assets → working implementation and observed checks. Text, controls and exact brand
 elements stay live. The [interface rules](guides/interface-rules.md) cover readable
 text, contrast, pointer cursors, keyboard operation and click controls without sliders.
+The [navigation contract](guides/ui-components.md#navigation-menus) covers menu
+behavior and links to the shared rules for header, dropdown and control alignment.
 Brand kits and page mockups are distinct from functioning products.
 
 Job templates are optional record forms. Generated projects and private reference

@@ -55,6 +55,37 @@ Do not implement range sliders, draggable comparison dividers, drag-only carouse
   desktop, intermediate widths, 320px and 200% text, including the combined narrow
   and enlarged-text case. Record intentional exceptions and fix accidental drift.
 
+### Navigation menu alignment
+
+- Use the selected header composition and the page's content gutters. Align the
+  logo, navigation row and utility actions on intentional tracks. If the logo is
+  meant to be centered, keep it centered when the side groups have unequal widths;
+  do not rely on equal-looking copy, spaces or manual pixel offsets.
+- Give peer links, disclosure triggers, search and account/cart actions consistent
+  control heights, line-height and padding. Align their box edges and label centers.
+  Keep logo artwork proportional; it need not share a button's dimensions. Reserve
+  space for carets, badges and active indicators so state changes do not shift labels.
+- Anchor a dropdown to its owning trigger or a declared header/content boundary.
+  Align its opening edge consistently and keep it within the viewport gutters.
+  Prevent clipping by ancestor overflow and stacking contexts; verify the panel
+  appears above page content. Keep the pointer path from trigger to panel usable.
+- In multi-column menus, align equivalent headings, first links and action rows.
+  Use shared tracks and the real-content rules above for unequal descriptions.
+  Align carets or badges in their own column beside wrapped labels. Let links grow
+  vertically; do not clip text, overlap targets or shrink type to retain one row.
+- Collapse navigation when its actual labels and utilities stop fitting. In the
+  narrow layout, align the menu trigger with the header controls and give expanded
+  links consistent insets and full usable rows. Constrain tall panels to the available
+  viewport height, allow vertical scrolling and keep dismissal reachable.
+- Check resting, focused, active and expanded states after fonts load, with long
+  labels, changing counts and different column lengths. Measure actual peer edges;
+  inspect just above and below the collapse width, 320px, 200% text and short viewports.
+  Include open-menu resizing and sticky-header anchor/focus visibility.
+
+Use [Navigation menus](ui-components.md#navigation-menus) for semantics, dismissal
+and the required interaction checks. These alignment requirements are project
+rules; they do not imply that every navigation element must have identical dimensions.
+
 ### Custom video players
 
 Every video included in a website must use a custom player designed in that site's visual language: its typography, colors, spacing, borders and button states. Do not expose the browser's default video control bar or embed an unstyled third-party player. Only include video when the page calls for it.

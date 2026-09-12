@@ -11,7 +11,7 @@ compatibility: >-
   helpers require Python 3.10+, Pillow and NumPy. Optional writing checks use
   Node.js. The package supplies no generator, credentials, fonts or artwork.
 metadata:
-  version: "2.0.1"
+  version: "2.0.2"
 ---
 
 # Image Gen Soul
@@ -35,6 +35,7 @@ publish, buy, contact others or use unrelated skills.
 | Redesign an existing site, page, navigation, modal, search or form | [REDESIGN](skills/redesign/SKILL.md) | Audit the existing behavior; follow its scoped route |
 | Generate UI concepts or compare layout styles | [Page mockups](guides/page-mockups.md) | Verify the kit first; stop at concepts if implementation was not requested |
 | Implement a selected UI mockup or interactive component | [UI implementation](guides/ui-components.md) | [Interface rules](guides/interface-rules.md) and browser-observed journeys |
+| Build or fix navigation menus, dropdowns or control alignment | [Navigation menus](guides/ui-components.md#navigation-menus) | [Alignment rules](guides/interface-rules.md#navigation-menu-alignment); REDESIGN when changing the composition |
 | Fix section order, navigation scope or brand-kit case studies | [Content hierarchy](guides/content-hierarchy.md) | REDESIGN for structural changes; writing for copy-only changes |
 | Write or edit marketing, navigation or interface text | [Writing](guides/writing.md) | Preserve facts and behavior; no image generation for copy-only work |
 | Find fonts, measure a palette or create CSS theme tokens | [Fonts and tokens](guides/fonts-tokens.md) | Brand first when composing the results into a kit |
@@ -95,7 +96,7 @@ Follow this dependency order for new or materially redesigned layouts:
 
 Apply [interface rules](guides/interface-rules.md) to every UI route: no emoji icons
 or eyebrows; 16px body and 14px minimum text; measured 4.5:1 text and 3:1 essential
-control contrast; aligned peer-card actions and consistently sized form controls;
+control contrast; aligned navigation, peer-card actions and consistently sized controls;
 pointer cursors on interactive elements; no sliders or required
 dragging; visible keyboard focus; 320px reflow and 200% text resizing. Videos need
 custom players styled to the site. The linked guide owns the details and standards.

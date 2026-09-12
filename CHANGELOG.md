@@ -1,3 +1,11 @@
+# 2.0.2
+
+Route navigation and alignment requests directly from the main skill. Define
+header tracks, dropdown boundaries, shared column/action alignment, wrapped labels,
+responsive collapse and short-viewport behavior. Consolidate navigation semantics,
+dismissal, focus and resize checks in the UI guide; link hierarchy and REDESIGN to
+that contract. Extend the brief template and add a scoped navigation-repair prompt.
+
 # 2.0.1
 
 Require aligned action rows across peer cards with unequal content and consistent

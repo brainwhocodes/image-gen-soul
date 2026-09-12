@@ -6,7 +6,7 @@ description: >-
   state variations before implementation, and verify the connected journeys.
   Referenced sub-skill of Image Gen Soul; install the parent package together.
 metadata:
-  version: "2.0.1"
+  version: "2.0.2"
 ---
 
 # REDESIGN
@@ -47,6 +47,11 @@ and distinguish global, local and product navigation. Inventory affected compone
 and their connected states using [UI implementation](../../guides/ui-components.md).
 Include expanded menus, search results, validation, completion and shared instances
 when relevant. State genuinely unchanged boundaries explicitly.
+
+For navigation work, use the [menu contract](../../guides/ui-components.md#navigation-menus)
+and [alignment rules](../../guides/interface-rules.md#navigation-menu-alignment).
+Audit header tracks, panel positioning, unequal labels, collapse thresholds and
+focus during dismissal or resizing across every affected navigation variant.
 
 ## Verify the identity
 

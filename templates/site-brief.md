@@ -18,6 +18,7 @@ See [Brand first](../guides/brand-first.md) and [Reference workflow](../guides/p
 - Product task, data source, states and real outcome:
 - Reading sequence; each section's visitor question, content, asset and next action:
 - Global, local and product navigation; unchanged scope boundaries:
+- Menu variants, collapse behavior, panel anchors and dismissal/focus decisions:
 
 See [Marketing and product](../guides/market-product.md),
 [Content hierarchy](../guides/content-hierarchy.md) and [copy brief](copy-brief.md).
@@ -37,7 +38,8 @@ states, separate embedded images and implementation comparisons.
 
 ## Verification and delivery
 
-- Observed desktop, 320px reflow and 200% text checks:
+- Observed desktop, collapse-boundary, 320px/200% text and short-viewport checks:
+- Measured peer controls, menu edges and action rows with unequal/wrapped content:
 - Measured contrast, minimum text, cursors, targets and keyboard focus:
 - Complete navigation, search, form, dialog and product journeys as applicable:
 - Final files, comparisons, downloads and remaining limitations:
