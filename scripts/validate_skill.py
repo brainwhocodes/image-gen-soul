@@ -11,6 +11,8 @@ def main():
     assert re.search(r'^name: image-gen-soul$', core, re.M), 'Unexpected skill name'
     for phrase in ['No emoji icons', 'No eyebrows', '14px', '4.5:1', '3:1', 'cursor: pointer', 'No sliders', '200%', '320']:
         assert phrase in core, f'Missing interface rule: {phrase}'
+    for phrase in ['Ask before generating UI mockups', 'generated logo', 'font imports', 'screenshot hash', 'marketing and product', 'Attach the inspected brand-kit screenshot']:
+        assert phrase in core, f'Missing brand-first requirement: {phrase}'
     references = {path.rstrip('.') for path in re.findall(r'(?:guides|scripts|templates)/[\w.-]+', core)}
     references.update(['templates/site-brief.md', 'requirements.txt', 'README.md', 'CHANGELOG.md'])
     for relative in references:

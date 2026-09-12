@@ -4,6 +4,20 @@
 
 Record the audience, primary action, exact copy, delivery format and required pages. Use semantic HTML, plain CSS custom properties and minimal vanilla JavaScript unless the user specifies a framework. Distinguish a fictional or local demo from a real service.
 
+## Site, tone and reference check
+
+Before UI mockups, record the user's answers about site type, audience, primary task, tone and constraints. Present reference sites or images and record the selected roles. Reuse prior answers; do not invent unresolved choices.
+
+## Composed brand kit before mockups
+
+Record verified font imports and candidates, the actual generated logo prompt/source, live wordmark and coordinated generated imagery. Design a unified HTML board that visibly combines the logo, font specimens, image composition and labeled palette. A plain documentation page or separate files are insufficient. Verify loaded fonts/assets, inspect and save the actual screenshot, and record its hash.
+
+## Separate marketing and product briefs
+
+Marketing: useful promise, primary conversion, section purposes, offer details, objections and final action. No fabricated endorsements or statistics.
+
+Product: primary task, data, controls, initial/changed/empty/error/completion states, and the real or explicitly local outcome. Attach the inspected brand screenshot to each separate mockup call and record its hash. Correct invented mockup copy and data in the implementation.
+
 ## Reference roles
 
 Assign verified current-job images to treatment, color, composition, subject and typography roles. Choose one main anchor per role; record conflicts without averaging unrelated styles. Inspect every selected reference.

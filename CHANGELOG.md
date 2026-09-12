@@ -1,3 +1,7 @@
+# 1.4.0
+
+Requires site and tone questions plus reference selection before UI mockups. Introduces an HTML brand-kit gate with verified fonts, actual generated logos, composed imagery, palette/type specimens, inspected screenshots and actual image conditioning. Separates marketing and product UI briefs, prompts, implementations and verification.
+
 # 1.3.0
 
 Makes meaningful reference-driven variations the default: preserve visual treatment while replacing people, objects and scene elements. Requires exact prompts and explicit preserve/change records.

@@ -4,7 +4,7 @@ A reference-driven skill for image generation, brand art, UI concepts, plain HTM
 
 Start with your images. Preserve their visual language while making meaningful variations with different people, objects, items or scene elements. Describe what stays and name what changes. The skill carries that intent through prompting, generation, inspection, correction and implementation. It has no default aesthetic, reference library or fixed palette.
 
-[Companion field guide](https://soul.brainwhocodes.rocks/) · [Interface rules](https://soul.brainwhocodes.rocks/guides/interface-rules/) · [Download the skill](https://soul.brainwhocodes.rocks/downloads/image-gen-soul.zip)
+[Twelve working sites](https://soul.brainwhocodes.rocks/worlds/) · [Composed brand kits](https://soul.brainwhocodes.rocks/brands/) · [Companion field guide](https://soul.brainwhocodes.rocks/) · [Interface rules](https://soul.brainwhocodes.rocks/guides/interface-rules/) · [Download the skill](https://soul.brainwhocodes.rocks/downloads/image-gen-soul.zip)
 
 ## Install
 
@@ -34,6 +34,8 @@ Attach the relevant reference images and ask:
 
 For a website:
 
+> Before generating UI mockups, ask me about the site or app, audience, main task and tone. Present reference sites or images for selection. Research suitable Google Fonts, generate an original logo, pair it with a live-type wordmark, generate coordinated product/content images, and compose a deliberately styled HTML board combining that logo, imagery, labeled palette and expressive specimens using real font imports. Render and inspect it, then attach its screenshot as the reference for separate marketing and product UI mockup prompts. Use the reviewed kit to build both working surfaces. Keep the images, prompts, palettes and correction decisions traceable.
+
 > Use image-gen-soul to build a landing page from these references in semantic HTML, plain CSS and minimal vanilla JavaScript. Start with the preserve/change/avoid contract in templates/site-brief.md. Apply the core interface rules: no emoji icons or eyebrows, 16px body text with a 14px floor, measured text and control contrast, labeled click controls instead of sliders, pointer cursors and keyboard support. Choose verified Google Fonts, define semantic CSS tokens, and generate coordinated artwork for the page. Check desktop, 320px reflow and 200% text resizing. Deliver working source, actual asset prompts, palettes and correction records.
 
 For prompts only, explicitly ask for prompts only. For color correction only, provide an existing image and a color reference and ask for Python correction without image generation. A skill never implies permission to publish or send messages beyond the user's request.
@@ -47,6 +49,8 @@ For prompts only, explicitly ask for prompts only. For color correction only, pr
 | [guides/production-layouts.md](guides/production-layouts.md) | Web, social, print and layered output |
 | [guides/color-workflow.md](guides/color-workflow.md) | Reference-relative grading and QA |
 | [guides/brand-kits.md](guides/brand-kits.md) | Brand art, marks and applications |
+| [guides/brand-first.md](guides/brand-first.md) | Site/tone questions, reference selection, HTML kit and mockup gate |
+| [guides/market-product.md](guides/market-product.md) | Separate marketing and product UI briefs and journeys |
 | [guides/ui-components.md](guides/ui-components.md) | Concepts translated into real controls |
 | [guides/fonts-tokens.md](guides/fonts-tokens.md) | Font research, palettes and CSS roles |
 | [guides/aspect-ratios.md](guides/aspect-ratios.md) | Recompose for each format |
