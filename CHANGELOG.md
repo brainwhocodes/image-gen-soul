@@ -1,3 +1,7 @@
+# 1.9.0
+
+Add a content-hierarchy guide and core rules for purpose-led section order, composed brand-kit case studies and scoped navigation. Extend REDESIGN to inspect and generate these structures and expanded/mobile menu states before implementation.
+
 # 1.8.0
 
 Documents and verifies installation with the Vercel skills CLI. The root SKILL.md identifies one complete image-gen-soul package with REDESIGN and supporting guides bundled. Adds a CI discovery and isolated Codex installation check.

@@ -15,7 +15,7 @@ compatibility: >-
   make no network or image-generation calls. Optional writing checks use Node.js
   and an explicitly installed local dependency. Respect host tool contracts.
 metadata:
-  version: "1.8.0"
+  version: "1.9.0"
 ---
 
 # Image Gen Soul
@@ -38,6 +38,8 @@ Before any website or app UI mockup, apply section 12 and guides/brand-first.md:
 For an existing-site, page or interactive-component redesign, use the referenced [REDESIGN sub-skill](skills/redesign/SKILL.md). It covers navigation, modals, search, forms and distinctive custom controls, including their states and connected journeys. Audit the current behavior, create or verify its combined brand kit, and generate inspected UI and state variations before implementation. Preserve semantic controls and verify mouse and keyboard operation.
 
 For reader-facing copy, apply [the writing guide](guides/writing.md) and section 14. Set the audience, supported offer, voice and action before drafting. Use realistic copy in mockups, keep product labels tied to implemented behavior, and preserve exact generation records when editing prose. A copy-only rewrite does not require new images.
+
+For page structure, brand-kit case studies and navigation, apply [content hierarchy](guides/content-hierarchy.md) and section 15. Establish the visitor's decision before ordering sections. A site marketing a skill must explain its value before presenting a large reference catalog.
 
 ## 1. Determine the operation
 
@@ -391,3 +393,11 @@ Avoid stock promises, manufactured urgency, fictional testimonials presented as 
 Keep button labels, form errors, search states and confirmations consistent with the working behavior. Supply realistic text to the UI mockup prompt, then implement it as live text. A copy edit must not alter historical generation prompts, image records, source attributions, recipes or timestamps.
 
 Review the complete text, run the optional writing checks when available, and inspect every finding in context. Record specific exceptions for legitimate lists or terminology; do not silently disable a rule to claim a clean run. Check the final copy against the product, preserve protected facts and verify wrapping and affected interactions at narrow widths and enlarged text.
+
+## 15. Establish content hierarchy and navigation
+
+Use guides/content-hierarchy.md to record the reader's purpose, section roles and reading sequence before mockup generation. Explain a tool's offer, useful outputs and starting action before a large catalog or technical archive. Let relevant evidence lead into deeper exploration; retain direct routes for returning visitors. Other site types follow their own visitor task rather than this example sequence.
+
+A brand-kit case study introduces the product and tone, presents the combined identity once, explains typography, color and image decisions, then shows how it becomes the working example. Keep full prompts, alternate research and raw measurements reachable through labeled details without repeating the whole board or overwhelming the introduction.
+
+Distinguish global navigation, page sections and an example product's controls. Use concise destination names, active states and a compact accessible mobile menu. Generate and inspect closed, expanded and narrow navigation references before implementation. Preserve product behavior and a clear route back to its kit and parent site. Verify the complete journey with mouse and keyboard.

@@ -4,6 +4,8 @@ A reference-driven skill for image generation, brand art, UI concepts, plain HTM
 
 It also includes a [writing guide](guides/writing.md) for concrete marketing copy and usable interface text. The guide adapts practices from [OMP Writing](https://github.com/bnivanov/omp-writing-skills), with optional cliché and AST checks. Source credits and licenses are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
+The [content hierarchy guide](guides/content-hierarchy.md) covers purpose-led section order, brand-kit case studies and navigation across a parent site and its examples. It keeps the offer and workflow ahead of large catalogs while preserving direct access for returning visitors.
+
 Start with your images. Preserve their visual language while making meaningful variations with different people, objects, items or scene elements. Describe what stays and name what changes. The skill carries that intent through prompting, generation, inspection, correction and implementation. It has no default aesthetic, reference library or fixed palette.
 
 [Twelve working sites](https://soul.brainwhocodes.rocks/worlds/) · [Composed brand kits](https://soul.brainwhocodes.rocks/brands/) · [Companion field guide](https://soul.brainwhocodes.rocks/) · [Interface rules](https://soul.brainwhocodes.rocks/guides/interface-rules/) · [Download the skill](https://soul.brainwhocodes.rocks/downloads/image-gen-soul.zip)

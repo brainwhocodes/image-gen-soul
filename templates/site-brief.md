@@ -20,6 +20,8 @@ Product: primary task, data, controls, initial/changed/empty/error/completion st
 
 ## Vertical content and layout plan
 
+Record the intended reading sequence, each visitor question and why its answer belongs at that point. Distinguish the main offer from catalogs and technical references. Map global navigation, page sections and example-product navigation separately. For a brand-kit case study, plan the brief, one complete board, design decisions and the transition to the working site.
+
 Before implementation, complete the navigation inventory in `templates/page-inventory.json`. Map every link to a page, anchor, existing shared document, external URL, download or action. Identify the actual generated mockup and continuation covering every designed page and navigation section. Record the brand screenshot hash, exact attachments and prompts, structural variation axes, inspected alternatives, chosen direction, selection reason and review time. Mark genuinely unchanged shared documentation explicitly. Use the kit and selected direction to generate every new page before writing its layout. Do not substitute an HTML screenshot or a single homepage concept for this coverage.
 
 For every section record: visitor question, actual copy/data, supporting artwork or demonstration, pattern chosen from the mockup, and next action. Include offer descriptions, meaningful differences, use cases, comparison or sample output, practical objections and a relevant conversion path. Identify observed mockup decisions versus proposed continuations.
