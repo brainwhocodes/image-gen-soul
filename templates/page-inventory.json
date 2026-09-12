@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "site": "",
+  "design_scope": [],
+  "brand_kit": {"screenshot": "", "sha256": "", "captured_at": "", "reviewed_at": ""},
+  "navigation": [],
+  "pages": [],
+  "variations": [],
+  "image_assets": [],
+  "instructions": {
+    "navigation_entry": "Record label, href, kind, page_id or section_id, and generated_mockup_id. Kinds: designed page, anchor, existing shared documentation, external, download, action. Explain unchanged documentation boundaries.",
+    "page_entry": "Record id, route, purpose, primary_action, content, required_states, selected_mockup_id, continuation_ids and implementation_comparison. Cover every designed navigation destination.",
+    "image_asset_entry": "Record page/section, mockup region, standalone generated file, actual prompt, references, raw hash, dimensions, crop, palette, correction and inspected match. Generate new/changed images separately before implementation; never crop from a UI mockup. Mark matching existing kit assets as reused.",
+    "variation_entry": "Record page_id, identity_constants, structural_axes, actual_prompt, actual_attachments and their hashes, raw_output and hash, generated_at, reviewed_at, observations, selected and selection_reason. Generate before implementation."
+  }
+}

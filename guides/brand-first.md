@@ -27,6 +27,16 @@ Attach the inspected brand-kit screenshot to the mockup generation call. A filen
 
 Record the kit screenshot hash in each mockup job. Generate no UI mockup before that kit exists. Inspect the returned mockup and record mismatches honestly. Implement exact fonts, logo, words and color tokens in HTML/CSS rather than reproducing raster mistakes.
 
+## Generate every navigation page before coding
+
+After capturing the kit, follow `guides/page-mockups.md`. Inventory every navigation link and its destination. Each distinct designed page needs its own generated mockup conditioned on the actual kit; hash links need coverage of the destination section in that page's mockup or a separate continuation. A homepage concept does not cover a shop, item detail, pricing, about, dashboard or checkout page. Shared components are reusable; a repeated page composition is not a substitute for page-specific design.
+
+Explore composition variations when testing different styles. Keep the logo, approved fonts, semantic palette and image treatment fixed while changing hierarchy, navigation placement, grid structure, image scale, density, section order and the way the offer is presented. Generate and inspect the alternatives before selecting one. A palette swap, a renamed template or a screenshot of already-written HTML is not an image-generated design variation.
+
+Choose a direction using existing user preferences or delegated judgment, then use that selected mockup together with the brand-kit screenshot to generate the other pages and substantial lower-page continuations. Do not implement a new page or materially different section before its generated reference has been inspected. Record the real prompt, attachments, output, selection reasons and page coverage. Compare the implemented page with its selected mockup and correct drift before delivery.
+
+Generate the images inside each selected mockup separately before implementation. Inventory every hero, product, person, illustration, thumbnail and background; give each its own image-generation prompt and output file, using the mockup for composition and the kit/original for treatment. Never crop artwork out of a UI mockup or use the mockup itself as the working page. Reuse an already separately generated kit asset only when it is the intended matching image; new or changed images require fresh standalone generation. Record and inspect the asset map, exact prompts, raw outputs, dimensions and responsive crops. See guides/page-mockups.md for the complete asset workflow.
+
 ## Keep the stages honest
 
 The order should be provable from files and records: reference choices, generated brand assets, rendered kit, mockup prompt with attached kit, generated mockup, implementation and verification. Reusable skill instructions contain the procedure, not this project's brand names, fixed palettes or artwork. Case studies belong to the companion site.

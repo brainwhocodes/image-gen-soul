@@ -4,6 +4,8 @@ A hero establishes a visual world. Supporting images should make that world usef
 
 ## Make an asset map first
 
+When implementing a UI mockup, inventory the images pictured inside it and generate them as separate standalone outputs before using them in code. Attach the selected mockup for composition and the kit/original for treatment; exclude surrounding UI in each prompt. Never crop a screenshot into production artwork. Record every page/region-to-file mapping, prompt, raw output, dimensions and responsive crop. Previously generated kit images can be reused where they are the intended matching assets; new or changed pictures need fresh generation and inspection. See the page-by-page workflow (see the companion guidance site).
+
 | Example | Hero | Supporting image | Purpose |
 |---|---|---|---|
 | Verdant | Layered garden with a stone pool | Magnolia beside water | A quiet detail for the experience section |

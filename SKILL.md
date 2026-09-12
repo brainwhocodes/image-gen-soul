@@ -14,7 +14,7 @@ compatibility: >-
   correction requires local Python 3.10+, Pillow, and NumPy. Supporting scripts
   make no network or image-generation calls. Respect host tool contracts.
 metadata:
-  version: "1.4.0"
+  version: "1.6.0"
 ---
 
 # Image Gen Soul
@@ -315,6 +315,8 @@ Inspect every page, shared component and dynamic state on desktop and a narrow v
 
 These checks address the stated rules; they are not a claim of complete WCAG conformance. Standards: [WCAG 2.2](https://www.w3.org/TR/WCAG22/), [text contrast](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html), [non-text contrast](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html), [target size](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html), and [dragging movements](https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html).
 
+Click-controlled content carousels are allowed when the material benefits from a sequence. They are not range sliders. Provide Previous/Next, direct selection, position feedback and Show all; never require dragging or auto-advance.
+
 ## 12. Brand first, mockups second
 
 A website needs a brand decision before it needs a picture of an interface. Keep the sequence visible: site brief and reference review, typography and logo, brand imagery, rendered HTML brand kit, mockups, then working marketing and product pages.
@@ -344,8 +346,32 @@ Attach the inspected brand-kit screenshot to the mockup generation call. A filen
 
 Record the kit screenshot hash in each mockup job. Generate no UI mockup before that kit exists. Inspect the returned mockup and record mismatches honestly. Implement exact fonts, logo, words and color tokens in HTML/CSS rather than reproducing raster mistakes.
 
+### Generate every navigation page before coding
+
+After capturing the kit, follow `guides/page-mockups.md`. Inventory every navigation link and its destination. Each distinct designed page needs its own generated mockup conditioned on the actual kit; hash links need coverage of the destination section in that page's mockup or a separate continuation. A homepage concept does not cover a shop, item detail, pricing, about, dashboard or checkout page. Shared components are reusable; a repeated page composition is not a substitute for page-specific design.
+
+Explore composition variations when testing different styles. Keep the logo, approved fonts, semantic palette and image treatment fixed while changing hierarchy, navigation placement, grid structure, image scale, density, section order and the way the offer is presented. Generate and inspect the alternatives before selecting one. A palette swap, a renamed template or a screenshot of already-written HTML is not an image-generated design variation.
+
+Choose a direction using existing user preferences or delegated judgment, then use that selected mockup together with the brand-kit screenshot to generate the other pages and substantial lower-page continuations. Do not implement a new page or materially different section before its generated reference has been inspected. Record the real prompt, attachments, output, selection reasons and page coverage. Compare the implemented page with its selected mockup and correct drift before delivery.
+
+Generate the images inside each selected mockup separately before implementation. Inventory every hero, product, person, illustration, thumbnail and background; give each its own image-generation prompt and output file, using the mockup for composition and the kit/original for treatment. Never crop artwork out of a UI mockup or use the mockup itself as the working page. Reuse an already separately generated kit asset only when it is the intended matching image; new or changed images require fresh standalone generation. Record and inspect the asset map, exact prompts, raw outputs, dimensions and responsive crops. See guides/page-mockups.md for the complete asset workflow.
+
 ### Keep the stages honest
 
 The order should be provable from files and records: reference choices, generated brand assets, rendered kit, mockup prompt with attached kit, generated mockup, implementation and verification. Reusable skill instructions contain the procedure, not this project's brand names, fixed palettes or artwork. Case studies belong to the companion site.
 
 Use the marketing and product guide (see the companion guidance site) to write the two briefs and inspect the 12 composed brand kits (see the companion guidance site) for examples.
+
+## 13. Use space to develop the offer
+
+A website is a complete vertical story, not just a hero screenshot. Inspect the chosen mockup's composition, including its supporting sections, then map it to content and working layouts. Give each section a distinct visitor question, concrete content, supporting imagery or proof, and an appropriate next action. Continue the design language through the full scroll.
+
+Generate those supporting compositions before coding them. Follow guides/page-mockups.md: inventory every navigation destination, generate genuinely different composition variations from the actual brand-kit attachment, select a direction, and generate each page and significant continuation. A short hero mockup does not authorize inventing the rest of the site's layout in code and retroactively calling it mockup-driven.
+
+Use the available width and vertical space intentionally: product grids, portrait galleries, editorial spreads, comparisons, programmes, timelines, annotated examples or click-controlled carousels as the content and mockup warrant. Do not force all content into one viewport, repeat the same three-card layout on every page, pad a thin page with empty space, or shrink readable type to make it fit. A longer page must add useful information and vary its visual rhythm.
+
+Explain the actual offer through descriptive product content, relevant differences, use cases, sample outputs, truthful offer details and practical objections. Each example site needs its own selling argument and content structure. Never invent customer evidence, technical claims, scarcity or transaction capabilities.
+
+Carousels require visible Previous/Next controls, direct item selection, a position announcement and Show all. No auto-advance or drag-only behavior. Preserve native keyboard operation and focus, correct selected states, pointer cursors, readable type and contrast. Keep essential comparison and offer details outside hidden slides; show all content without JavaScript.
+
+Use guides/market-product.md and templates/site-brief.md to record the content and layout plan. Inspect full-page desktop and narrow screenshots, section transitions, 200% text, carousel states and item-specific CTA destinations. Do not call a sparse hero plus repeated features a complete marketing site.

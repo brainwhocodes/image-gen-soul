@@ -7,6 +7,8 @@ Write the marketing brief and product UI brief separately. The marketing and pro
 
 Use generated interface imagery to investigate visual direction. Build the actual controls with semantic HTML, CSS and a small amount of JavaScript when behavior requires it.
 
+Generate the content images shown in the selected mockup as separate standalone assets before implementing them. Maintain a page/region-to-file asset map. Attach the mockup for composition and the kit or original for treatment, and explicitly exclude surrounding UI from each individual image prompt. Do not crop the mockup, use screenshots as artwork, or substitute generic placeholders. Already generated kit assets may be reused where they are the actual matching images; any new or changed picture requires its own generation and inspection.
+
 Follow the interface rules (see the companion guidance site) throughout the implementation. The concept below predates these rules and is retained as historical generation evidence; do not copy its small lettering or drawn progress controls into the live interface.
 
 ## Prompt the product after the brand kit
@@ -22,6 +24,12 @@ The twelve complete examples (see the companion guidance site) each include a wo
 
 
 The generated concept is an image. Its controls cannot play audio. The Orbital example (see the companion guidance site) contains a separately implemented interactive sound demo and real controls.
+
+## Carry the mockup through the whole page
+
+Before coding, follow the page-by-page mockup guide (see the companion guidance site). Map every navigation destination, generate actual brand-conditioned style variations, inspect and select a direction, then generate each page and significant continuation using the kit and selected mockup. A single landing-page image cannot stand in for every destination. Never generate evidence retroactively from an already-built page or merely recolor the same template across brands.
+
+Inspect the mockup’s supporting sections as well as its hero. Plan a full vertical sequence with concrete content, varied image scale and layouts suited to the task. Grids, portrait galleries, comparison tables, editorial spreads, timelines and click-controlled carousels are options, not a checklist to apply everywhere. Follow the marketing and product guide for content depth, carousel accessibility and item-specific conversion paths. A page with only a hero and repeated short features is incomplete.
 
 ## Translate visual decisions into code
 

@@ -34,11 +34,15 @@ Attach the relevant reference images and ask:
 
 For a website:
 
-> Before generating UI mockups, ask me about the site or app, audience, main task and tone. Present reference sites or images for selection. Research suitable Google Fonts, generate an original logo, pair it with a live-type wordmark, generate coordinated product/content images, and compose a deliberately styled HTML board combining that logo, imagery, labeled palette and expressive specimens using real font imports. Render and inspect it, then attach its screenshot as the reference for separate marketing and product UI mockup prompts. Use the reviewed kit to build both working surfaces. Keep the images, prompts, palettes and correction decisions traceable.
+> Map every navigation destination before coding. Use the inspected HTML brand kit as an actual image attachment to generate structurally different style variations. Select a direction using my brief, then attach the kit and selected mockup to generate each designed page and the significant lower-page continuations. A homepage concept does not cover the shop, detail, pricing or app screens. Show the actual alternatives and page coverage, then build and compare each page to its selected reference. Never substitute a recolored template or a screenshot of code written before generation.
+
+> Before generating UI mockups, ask me about the site or app, audience, main task and tone. Present reference sites or images for selection. Research suitable Google Fonts, generate an original logo, pair it with a live-type wordmark, generate coordinated product/content images, and compose a deliberately styled HTML board combining that logo, imagery, labeled palette and expressive specimens using real font imports. Render and inspect it, then attach its screenshot as the reference for separate marketing and product UI mockup prompts. Use the reviewed kit to build both working surfaces. Develop the whole vertical page with substantive content and layouts drawn from the mockup: appropriate grids, editorial sequences, comparisons or accessible click-controlled carousels. Give every section a distinct selling purpose. Keep the images, prompts, palettes and correction decisions traceable.
 
 > Use image-gen-soul to build a landing page from these references in semantic HTML, plain CSS and minimal vanilla JavaScript. Start with the preserve/change/avoid contract in templates/site-brief.md. Apply the core interface rules: no emoji icons or eyebrows, 16px body text with a 14px floor, measured text and control contrast, labeled click controls instead of sliders, pointer cursors and keyboard support. Choose verified Google Fonts, define semantic CSS tokens, and generate coordinated artwork for the page. Check desktop, 320px reflow and 200% text resizing. Deliver working source, actual asset prompts, palettes and correction records.
 
 For prompts only, explicitly ask for prompts only. For color correction only, provide an existing image and a color reference and ask for Python correction without image generation. A skill never implies permission to publish or send messages beyond the user's request.
+
+When implementing a selected mockup, generate its content images separately. Ask for an asset map, individual image prompts and standalone files for every new or changed hero, product, person, illustration or background. The mockup guides composition; it must not be cropped into production artwork or used as the page itself. Reuse matching kit images only with their existing standalone generation records.
 
 ## What is inside
 
@@ -50,6 +54,7 @@ For prompts only, explicitly ask for prompts only. For color correction only, pr
 | [guides/color-workflow.md](guides/color-workflow.md) | Reference-relative grading and QA |
 | [guides/brand-kits.md](guides/brand-kits.md) | Brand art, marks and applications |
 | [guides/brand-first.md](guides/brand-first.md) | Site/tone questions, reference selection, HTML kit and mockup gate |
+| [guides/page-mockups.md](guides/page-mockups.md) | Navigation coverage, generated style alternatives and page-by-page design before code |
 | [guides/market-product.md](guides/market-product.md) | Separate marketing and product UI briefs and journeys |
 | [guides/ui-components.md](guides/ui-components.md) | Concepts translated into real controls |
 | [guides/fonts-tokens.md](guides/fonts-tokens.md) | Font research, palettes and CSS roles |
@@ -57,6 +62,7 @@ For prompts only, explicitly ask for prompts only. For color correction only, pr
 | [guides/content-images.md](guides/content-images.md) | Coordinated content imagery |
 | [templates/job.json](templates/job.json) | Per-job provenance scaffold |
 | [templates/site-brief.md](templates/site-brief.md) | Website brief and delivery contract |
+| [templates/page-inventory.json](templates/page-inventory.json) | Navigation destinations, actual mockups, variations and implementation comparison |
 | [scripts/color_pipeline.py](scripts/color_pipeline.py) | Inspect, fit, apply and compare images |
 | [scripts/palette_extract.py](scripts/palette_extract.py) | Histogram palette and luminance measurement |
 

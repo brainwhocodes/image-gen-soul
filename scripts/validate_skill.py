@@ -13,11 +13,17 @@ def main():
         assert phrase in core, f'Missing interface rule: {phrase}'
     for phrase in ['Ask before generating UI mockups', 'generated logo', 'font imports', 'screenshot hash', 'marketing and product', 'Attach the inspected brand-kit screenshot']:
         assert phrase in core, f'Missing brand-first requirement: {phrase}'
+    for phrase in ['complete vertical story', 'Show all', 'selling argument', 'guides/market-product.md']:
+        assert phrase in core, f'Missing spatial/content requirement: {phrase}'
+    for phrase in ['Generate every navigation page before coding', 'composition variations', 'guides/page-mockups.md', 'before selecting one', 'Generate the images inside each selected mockup separately', 'Never crop artwork out of a UI mockup']:
+        assert phrase in core, f'Missing page-first requirement: {phrase}'
     references = {path.rstrip('.') for path in re.findall(r'(?:guides|scripts|templates)/[\w.-]+', core)}
     references.update(['templates/site-brief.md', 'requirements.txt', 'README.md', 'CHANGELOG.md'])
     for relative in references:
         assert (ROOT / relative).is_file(), f'Missing referenced file: {relative}'
     json.loads((ROOT / 'templates/job.json').read_text(encoding='utf-8'))
+    inventory = json.loads((ROOT / 'templates/page-inventory.json').read_text(encoding='utf-8'))
+    assert {'navigation', 'pages', 'variations', 'brand_kit', 'image_assets'} <= inventory.keys()
     for path in [ROOT/'SKILL.md', ROOT/'README.md', *(ROOT/'guides').glob('*.md')]:
         text = path.read_text(encoding='utf-8')
         assert 'C:\\Users\\' not in text and '/Users/' not in text, f'Local path in {path.name}'
