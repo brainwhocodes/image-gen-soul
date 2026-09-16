@@ -50,8 +50,12 @@ def main():
     inventory = json.loads((ROOT / 'templates/page-inventory.json').read_text(encoding='utf-8'))
     assert {'navigation', 'pages', 'variations', 'brand_kit', 'image_assets'} <= inventory.keys()
     assert {'screenshot', 'sha256', 'captured_at', 'reviewed_at'} <= inventory['brand_kit'].keys()
+    fidelity = json.loads((ROOT / 'templates/fidelity-record.json').read_text(encoding='utf-8'))
+    assert {'selected_reference', 'landmarks', 'asset_slots', 'comparisons',
+            'adaptations', 'remaining_failures', 'visual_review_passed'} <= fidelity.keys()
+    assert fidelity['visual_review_passed'] is None, 'Scaffolding must not preapprove visual review'
     for relative in ['requirements.txt', 'CHANGELOG.md', 'THIRD_PARTY_NOTICES.md',
-                     'scripts/color_pipeline.py', 'scripts/palette_extract.py',
+                     'scripts/color_pipeline.py', 'scripts/palette_extract.py', 'scripts/asset_review.py',
                      'scripts/writing/lint.mjs', 'scripts/writing/cliche-lint.mjs']:
         assert (ROOT / relative).is_file(), f'Missing helper: {relative}'
     print(f'PASS: {len(body.split())}-word router, {len(guides)} routed guides, '

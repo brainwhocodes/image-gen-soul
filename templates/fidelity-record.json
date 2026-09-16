@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "selected_reference": {
+    "path": null,
+    "sha256": null,
+    "page_or_section": null,
+    "viewport_css_px": null,
+    "state": null,
+    "assumptions": []
+  },
+  "landmarks": [],
+  "asset_slots": [],
+  "comparisons": [],
+  "adaptations": [],
+  "remaining_failures": [],
+  "visual_review_passed": null,
+  "instructions": {
+    "landmark": "Record element, reference bounds/coordinate space, alignment, relative scale, layer order, protected regions and narrow adaptation. Select tolerances from this design, not a universal similarity threshold.",
+    "asset_slot": "Record route/region, reference/hash, pose/gesture/gaze/expression/props, identity anchor, actual generation attachments/prompt, raw/master/export hashes, dimensions, visible subject bounds, responsive crop and reuse rationale. For cutouts, link solid light/dark/project-background and full-resolution edge/gap reviews; record findings and final export review separately from alpha stats.",
+    "comparison": "Record route/state, reference/hash, actual capture/hash, loaded asset versions, viewport/DPR, font/image readiness, tool/version/command/options, comparison-only crops/resizes/masks, diff path/result, focal-region findings, fixes and rerun evidence. Mark unavailable checks as unavailable, not passed.",
+    "adaptation": "Record region, reason (responsive/accessibility/real content or user-selected new direction), evidence and any required user choice. Preserve original mockups; never backfill them from code."
+  }
+}

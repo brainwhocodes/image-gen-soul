@@ -18,6 +18,11 @@ matching existing asset with true provenance. A UI screenshot cannot supply live
 controls or be sliced into production artwork. Compare the implemented page to its
 selected generated reference and record necessary responsive or accessibility changes.
 
+Use [Mockup fidelity](mockup-fidelity.md) to lock pose/placement relationships,
+review transparent exports, preserve intentional overlap and compare matched browser
+captures with ODiff. Inspect visible subject bounds and focal details, not just CSS
+image-box dimensions. Functional test success does not establish visual fidelity.
+
 ## Align repeated components and form rows
 
 Apply the [alignment rules](interface-rules.md#alignment-with-real-content) before

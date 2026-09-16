@@ -97,6 +97,11 @@ Use actual alpha, not a drawn checkerboard or white background mislabeled as
 transparent. Inspect edges against more than one background. Avoid double
 premultiplication, dark halos, missing interior gaps, and clipped strokes.
 
+Follow the [cutout acceptance gate](mockup-fidelity.md#cutout-acceptance-alpha-is-necessary-not-sufficient)
+for solid-background composites, full-resolution edge/gap review, protected interior
+detail and rechecking the compressed export. The linked helper produces review
+artifacts; alpha presence is never automatic visual approval.
+
 Foreground and background artwork can share a coordinated color treatment after
 compositing. Place exact brand assets on top afterward, or explicitly protect
 them in the grade. If the requested effect intentionally changes those colors,

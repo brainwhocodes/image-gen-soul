@@ -11,7 +11,7 @@ compatibility: >-
   helpers require Python 3.10+, Pillow and NumPy. Optional writing checks use
   Node.js. The package supplies no generator, credentials, fonts or artwork.
 metadata:
-  version: "2.0.2"
+  version: "2.1.0"
 ---
 
 # Image Gen Soul
@@ -35,6 +35,7 @@ publish, buy, contact others or use unrelated skills.
 | Redesign an existing site, page, navigation, modal, search or form | [REDESIGN](skills/redesign/SKILL.md) | Audit the existing behavior; follow its scoped route |
 | Generate UI concepts or compare layout styles | [Page mockups](guides/page-mockups.md) | Verify the kit first; stop at concepts if implementation was not requested |
 | Implement a selected UI mockup or interactive component | [UI implementation](guides/ui-components.md) | [Interface rules](guides/interface-rules.md) and browser-observed journeys |
+| Match a mockup, repair visual drift or review generated cutouts | [Mockup fidelity](guides/mockup-fidelity.md) | Pose/placement contracts, solid-background asset review and ODiff comparisons |
 | Build or fix navigation menus, dropdowns or control alignment | [Navigation menus](guides/ui-components.md#navigation-menus) | [Alignment rules](guides/interface-rules.md#navigation-menu-alignment); REDESIGN when changing the composition |
 | Fix section order, navigation scope or brand-kit case studies | [Content hierarchy](guides/content-hierarchy.md) | REDESIGN for structural changes; writing for copy-only changes |
 | Write or edit marketing, navigation or interface text | [Writing](guides/writing.md) | Preserve facts and behavior; no image generation for copy-only work |
@@ -87,12 +88,15 @@ Follow this dependency order for new or materially redesigned layouts:
    and explore structural alternatives when comparing styles. Inspect and select
    before implementation; never make retroactive mockups from already-written code.
 4. Generate new images pictured inside the selected mockup as separate assets.
+   Follow [Mockup fidelity](guides/mockup-fidelity.md) to lock each pose, placement,
+   crop and overlap before accepting the file; verify cutouts beyond alpha presence.
    Reuse matching, already generated kit assets with their actual records. Never
    crop artwork out of a UI mockup or turn the mockup into a page-sized background.
 5. Build and compare the working page using live text and semantic controls.
    Carry the selected composition through the full scroll with useful content.
    Preserve the requested framework contract; default to portable HTML/CSS and
-   minimal JavaScript. Test the real navigation and task journeys.
+   minimal JavaScript. Compare matched browser captures with ODiff when available
+   (required when requested), inspect the differences and test real task journeys.
 
 Apply [interface rules](guides/interface-rules.md) to every UI route: no emoji icons
 or eyebrows; 16px body and 14px minimum text; measured 4.5:1 text and 3:1 essential

@@ -6,7 +6,7 @@ description: >-
   state variations before implementation, and verify the connected journeys.
   Referenced sub-skill of Image Gen Soul; install the parent package together.
 metadata:
-  version: "2.0.2"
+  version: "2.1.0"
 ---
 
 # REDESIGN
@@ -22,6 +22,10 @@ routes and behavior; do not force replacement imagery. For a small behavior or
 accessibility or alignment repair that leaves the visual composition intact, use
 [UI implementation](../../guides/ui-components.md) and verify the affected journey.
 A new or materially changed composition follows the design sequence below.
+
+For a repair to match an already selected mockup or clean up its generated assets,
+use [Mockup fidelity](../../guides/mockup-fidelity.md). Preserve that reference;
+do not force a new design direction or regenerate mockups to excuse drift.
 
 Reuse answers about the site, audience, task and tone. Ask only about unresolved
 decisions that materially change the direction. A request to redesign this existing
@@ -95,7 +99,9 @@ Use [UI implementation](../../guides/ui-components.md) and
 [Interface rules](../../guides/interface-rules.md). Preserve the technology contract,
 working routes, data and interactions. Follow the selected full-page composition
 and give each section useful content. Compare real desktop/narrow screenshots with
-the concept, record justified adaptations and fix material drift.
+the concept using the Mockup fidelity gates, record justified adaptations and fix
+material drift. Verify depicted poses, transparent edges and intentional overlaps
+in the actual layout as well as the standalone assets.
 
 Exercise the entire affected journey, including navigation, dismissal/focus,
 search no-matches and reset, invalid/valid forms and truthful outcomes as applicable.

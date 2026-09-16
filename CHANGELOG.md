@@ -1,3 +1,13 @@
+# 2.1.0
+
+Add mockup-to-asset fidelity gates for pose, silhouette, visible subject bounds,
+intentional overlap and responsive placement. Require full-resolution solid-background
+cutout review beyond alpha presence; preserve interior details, raw art and versioned
+exports. Add an offline asset-review helper with synthetic tests and an optional
+fidelity record. Route implementation, production and REDESIGN through matched
+browser/ODiff comparisons and regional visual review. Correct accidental drift
+against the selected reference instead of regenerating a mockup to excuse it.
+
 # 2.0.2
 
 Route navigation and alignment requests directly from the main skill. Define

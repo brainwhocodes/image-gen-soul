@@ -80,6 +80,13 @@ Job templates are optional record forms. Generated projects and private referenc
 images belong outside the skill repository. This repo contains only the reusable
 skill package, its documentation, helper code, tests and source licenses.
 
+For selected mockups and generated cutouts, use the [fidelity gates](guides/mockup-fidelity.md):
+match each depicted pose and visible subject placement, preserve intentional overlap,
+inspect transparent exports on solid backgrounds at detail scale, and compare real
+desktop/mobile captures with ODiff when available (or requested). Alpha presence and
+passing interaction tests do not establish visual fidelity. Accidental drift is fixed
+against the selected reference, not excused by replacing it.
+
 ## Validate and use the helpers
 
 Run from the installed skill directory:
@@ -94,6 +101,11 @@ node scripts/writing/cliche-lint.mjs --self-test
 The validator checks package discovery, routing, portable links and templates.
 GitHub Actions also installs a copied package into an isolated project. Image tests
 use synthetic temporary files and do not invoke a generator or network service.
+
+`python scripts/asset_review.py --help` describes the offline cutout-review helper.
+It produces native-size light/dark/project-background composites, optional edge/gap
+crops and an alpha report in a new job-local directory. It does not remove a
+background or automatically approve an image; inspect the outputs and final placement.
 
 For palette measurements and inspect/fit/apply/compare commands, follow
 [Fonts and tokens](guides/fonts-tokens.md) and [Color workflow](guides/color-workflow.md).
