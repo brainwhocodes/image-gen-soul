@@ -5,6 +5,10 @@ working HTML/CSS sites, copy, fonts, CSS tokens and measured color correction.
 It preserves a reference's visual language while changing the people, objects or
 scene as requested. It ships no default style, palette, artwork or website code.
 
+The [core guidance](SKILL.md) puts design judgment, craft and rendered inspection
+first. Its aesthetic preferences are defaults that yield to the current brief and
+project; focused guides supply production workflows and verification.
+
 [Guidance site](https://soul.brainwhocodes.rocks/) ·
 [Working examples](https://soul.brainwhocodes.rocks/worlds/) ·
 [Brand kits](https://soul.brainwhocodes.rocks/brands/)
@@ -67,11 +71,11 @@ procedure: references, production formats, brand kits, page mockups, implementat
 interface rules, hierarchy, marketing/product briefs, writing, fonts/tokens and color.
 The REDESIGN sub-skill adds an existing-site audit and reuses those same guides.
 
-For new interfaces, the order is brief/references → generated logo and imagery →
+For new interfaces, the order is brief/references → logo and coordinated imagery →
 styled HTML brand-kit screenshot → generated page/state mockups → separate content
 assets → working implementation and observed checks. Text, controls and exact brand
-elements stay live. The [interface rules](guides/interface-rules.md) cover readable
-text, contrast, pointer cursors, keyboard operation and click controls without sliders.
+elements stay live. The [interface guide](guides/interface-rules.md) owns
+accessibility, alignment, motion and media guidance.
 The [navigation contract](guides/ui-components.md#navigation-menus) covers menu
 behavior and links to the shared rules for header, dropdown and control alignment.
 Brand kits and page mockups are distinct from functioning products.

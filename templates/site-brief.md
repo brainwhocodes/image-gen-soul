@@ -26,7 +26,7 @@ See [Marketing and product](../guides/market-product.md),
 ## Brand evidence
 
 - Verified font candidates, selected imports and tokens:
-- Generated logo, live wordmark and standalone image records:
+- Supplied or generated logo, live wordmark and standalone image records:
 - Composed HTML board, inspected screenshot, capture time and hash:
 - Sampled palettes versus semantic colors; correction decisions:
 
@@ -40,7 +40,8 @@ states, separate embedded images and implementation comparisons.
 
 - Observed desktop, collapse-boundary, 320px/200% text and short-viewport checks:
 - Measured peer controls, menu edges and action rows with unequal/wrapped content:
-- Measured contrast, minimum text, cursors, targets and keyboard focus:
+- Observed accessibility checks from the interface guide:
+- Motion purpose, rendered transition review and reduced-motion behavior, when used:
 - Complete navigation, search, form, dialog and product journeys as applicable:
 - Final files, comparisons, downloads and remaining limitations:
 - Existing publishing authorization and preserved crawler/hosting requirements:

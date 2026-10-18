@@ -11,15 +11,21 @@ compatibility: >-
   helpers require Python 3.10+, Pillow and NumPy. Optional writing checks use
   Node.js. The package supplies no generator, credentials, fonts or artwork.
 metadata:
-  version: "2.1.0"
+  version: "2.2.0"
 ---
 
 # Image Gen Soul
 
+Approach important visual work as a brilliant UI/UX designer with a high bar for taste, craft, and execution. Use your own judgment rather than a house style or checklist. Put real effort into the design and into motion when motion genuinely improves it. Render and inspect meaningful visual changes before presenting them.
+
+The user's default design preferences:
+
+> I generally dislike cream backgrounds and reflex all-caps eyebrow labels because models overuse them. I also typically dislike italicizing individual words within hero section headlines or section titles for emphasis because models tend to overuse italics. Treat these as preferences, not bans. Avoid generic AI defaults, but do not design by negation. Current instructions and project context override these defaults.
+
 Use the current brief and actual references to make the requested deliverable.
 Preserve defining visual relationships while deliberately varying people,
-objects or scene elements as permitted. This package has no default aesthetic,
-palette, reference library or color grade.
+objects or scene elements as permitted. The guides support design judgment with
+production workflows and verification; they do not prescribe a visual formula.
 
 This file routes the work. Read the matching guide, then follow its linked next
 step. Load only the procedures needed for the current task. User instructions
@@ -74,36 +80,18 @@ publish, buy, contact others or use unrelated skills.
 
 ## Website sequence
 
-Follow this dependency order for new or materially redesigned layouts:
+For new or materially redesigned layouts, follow the dependency order in
+[Brand first](guides/brand-first.md) and [Page mockups](guides/page-mockups.md):
+brief and references → inspected HTML brand kit → generated page/state mockups
+and selection → separate production assets → implementation and browser comparison.
+Keep original generation records distinct from implementation captures.
 
-1. Establish the site, audience, task and tone; present reference sites or images.
-   Ask about unresolved choices before UI generation. Reuse answers and explicit
-   delegation instead of repeating questions. Separate the marketing promise
-   from the product task and plan the reader's full decision sequence.
-2. Verify fonts, generate the requested logo and coordinated standalone imagery,
-   then compose them with the palette in styled HTML. Inspect the actual browser
-   screenshot with loaded fonts and images. A font list or loose files is not a kit.
-3. Attach that inspected brand-kit screenshot to image generation. Inventory every
-   navigation destination, generate each designed page and substantial continuation,
-   and explore structural alternatives when comparing styles. Inspect and select
-   before implementation; never make retroactive mockups from already-written code.
-4. Generate new images pictured inside the selected mockup as separate assets.
-   Follow [Mockup fidelity](guides/mockup-fidelity.md) to lock each pose, placement,
-   crop and overlap before accepting the file; verify cutouts beyond alpha presence.
-   Reuse matching, already generated kit assets with their actual records. Never
-   crop artwork out of a UI mockup or turn the mockup into a page-sized background.
-5. Build and compare the working page using live text and semantic controls.
-   Carry the selected composition through the full scroll with useful content.
-   Preserve the requested framework contract; default to portable HTML/CSS and
-   minimal JavaScript. Compare matched browser captures with ODiff when available
-   (required when requested), inspect the differences and test real task journeys.
-
-Apply [interface rules](guides/interface-rules.md) to every UI route: no emoji icons
-or eyebrows; 16px body and 14px minimum text; measured 4.5:1 text and 3:1 essential
-control contrast; aligned navigation, peer-card actions and consistently sized controls;
-pointer cursors on interactive elements; no sliders or required
-dragging; visible keyboard focus; 320px reflow and 200% text resizing. Videos need
-custom players styled to the site. The linked guide owns the details and standards.
+[Interface rules](guides/interface-rules.md) owns accessibility, alignment and
+motion guidance; [UI implementation](guides/ui-components.md) owns component
+behavior and journey checks; [Mockup fidelity](guides/mockup-fidelity.md) owns
+asset acceptance and visual comparison. Use the relevant guide instead of copying
+its rules into each brief. Copy, behavior and alignment repairs that preserve the
+composition use the scoped routes above without restarting the design sequence.
 
 ## Keep the handoff small and complete
 

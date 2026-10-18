@@ -1,3 +1,13 @@
+# 2.2.0
+
+Put designer judgment, taste, craft, purposeful motion and rendered inspection at
+the center of the skill. Record cream backgrounds, reflex all-caps eyebrows and
+isolated italic headline words as soft preferences that yield to current instructions
+and project context. Replace blanket style and control prescriptions with contextual
+choices and accessibility requirements. Add motion inspection and reduced-motion
+guidance. Consolidate repeated workflow and verification rules in their owning
+guides while preserving the brand-kit, generated-mockup and asset-fidelity sequence.
+
 # 2.1.0
 
 Add mockup-to-asset fidelity gates for pose, silhouette, visible subject bounds,

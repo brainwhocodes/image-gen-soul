@@ -6,7 +6,7 @@ description: >-
   state variations before implementation, and verify the connected journeys.
   Referenced sub-skill of Image Gen Soul; install the parent package together.
 metadata:
-  version: "2.1.0"
+  version: "2.2.0"
 ---
 
 # REDESIGN
@@ -59,13 +59,10 @@ focus during dismissal or resizing across every affected navigation variant.
 
 ## Verify the identity
 
-Inspect the existing kit. A logo, font list or color list alone is incomplete.
-Use [Brand first](../../guides/brand-first.md) to formalize the existing identity or
-perform the requested rebrand. Preserve an exact supplied mark; generate an original
-logo when needed and authorized. Combine real imported fonts, logo, imagery and
-labeled palette in styled HTML; inspect and hash the actual brand-kit screenshot.
-Reuse matching standalone artwork with its real records. If HTML rendering is
-unavailable, label a generated board as a concept without claiming font verification.
+Use [Brand first](../../guides/brand-first.md) to inspect and reuse the existing
+kit, formalize a partial identity or perform the requested rebrand. Preserve exact
+supplied marks and matching artwork unless changing them is in scope. That guide
+owns board composition, font verification, rendering and evidence requirements.
 
 ## Generate the variation before implementation
 
@@ -74,11 +71,9 @@ screenshot and inspected brand-kit screenshot through the supported image mechan
 The original supplies content, behavior and preserved constraints; the kit supplies
 identity; the prompt specifies deliberate layout changes. Draft realistic copy first.
 
-Name structural axes of change such as hierarchy, navigation placement, columns,
-image arrangement, density, section sequence and conversion presentation. Generate
-at least two alternatives when comparing styles. Keep the identity and relevant
-states constant so the comparison is fair. A recolor, prose prompt or screenshot
-of already-written code does not satisfy this stage.
+Use the [composition variation guidance](../../guides/page-mockups.md#explore-real-composition-variations)
+when comparing directions. Keep the preserved identity and relevant states constant
+so the comparison reveals the effect of the proposed structural changes.
 
 Generate each distinct page, substantial continuation and materially different
 component state in scope at readable scale. A closed menu does not cover its expanded

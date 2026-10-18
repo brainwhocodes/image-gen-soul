@@ -57,9 +57,8 @@ focal position and intended use of `object-position`/background positioning in
 the handoff; test in the actual layout when code and rendering tools are available.
 Do not claim responsive behavior was checked without rendering it.
 
-Match the reference's actual rendering language. Do not add generic gradient
-blobs, glossy 3D objects, grain, or fashionable filters that were not requested.
-The background should support the interface rather than compete with it.
+Choose rendering, material and surface treatment from the reference and project
+direction. Give the background a clear role in supporting the interface's hierarchy.
 
 Use a lossless master and a delivery format supported by the project. Treat a
 file-size target as a project requirement, not a universal rule. Verify that

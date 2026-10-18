@@ -14,7 +14,7 @@ Headings should tell the story when read in sequence. Use one page heading, mean
 
 ## Make brand-kit pages useful case studies
 
-Distinguish the editable identity board from the page explaining it. The board combines the generated logo, imported typography, coordinated images and labeled palette. Preserve its inspected source and screenshot as evidence. The companion page explains how those choices serve the product.
+Distinguish the editable identity board from the page explaining it. The board combines the logo, imported typography, coordinated images and labeled palette. Preserve its inspected source and screenshot as evidence. The companion page explains how those choices serve the product.
 
 Introduce the product, audience and tone. Present the complete board once at a useful size, with access to its full-size screenshot and editable HTML. Do not place the full live board and an identical full screenshot one after another.
 
@@ -39,8 +39,9 @@ Keep these procedures canonical rather than creating a different contract for ea
 
 ## Generate and verify the structure
 
-For a structural redesign, follow [REDESIGN](../skills/redesign/SKILL.md). Attach the existing page and inspected brand kit to generate the proposed hierarchy before coding. Generate alternatives when comparing structures, including substantial lower-page continuations. Cover menus closed, expanded and at narrow widths. Shared navigation can use component references across existing pages without inventing new page compositions for unchanged content.
-
-Inventory artwork inside the selected mockup. Reuse matching separately generated assets with their actual records, or generate new assets independently. Never crop artwork from the UI concept.
+For a structural redesign, follow [REDESIGN](../skills/redesign/SKILL.md) and the
+coverage and asset workflow in [Page mockups](page-mockups.md). Cover menus closed,
+expanded and at narrow widths. Shared navigation can use component references
+across existing pages without inventing new compositions for unchanged content.
 
 Verify the complete introduction-to-kit-to-example-and-return journey. Exercise every affected destination, local section link, disclosure and primary action. Inspect desktop, 320px reflow and 200% text, including long labels and expanded menus. Confirm technical detail remains accessible without overwhelming the introduction. Record observed results and refresh affected previews and downloads.

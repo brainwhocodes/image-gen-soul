@@ -1,8 +1,10 @@
 # Implement the selected interface
 
-Start with an inspected mockup and its [page/asset inventory](../templates/page-inventory.json).
-If those are missing, return to [Brand first](brand-first.md) and [Page mockups](page-mockups.md)
-before writing a new layout. For an existing component use [REDESIGN](../skills/redesign/SKILL.md).
+For a new or materially changed layout, start with an inspected mockup and its
+[page/asset inventory](../templates/page-inventory.json). If those are missing,
+return to [Brand first](brand-first.md) and [Page mockups](page-mockups.md).
+For existing work, use [REDESIGN](../skills/redesign/SKILL.md) to choose the scope;
+repairs that preserve the composition proceed here without new mockups.
 Apply [Interface rules](interface-rules.md) throughout implementation and verification.
 
 ## Translate the full composition
@@ -27,11 +29,8 @@ image-box dimensions. Functional test success does not establish visual fidelity
 
 Apply the [alignment rules](interface-rules.md#alignment-with-real-content) before
 polishing individual controls. Inventory peer cards and field groups, distinguish
-intentional composition offsets from accidental drift, and check their actual
-action/control edges. Use flexible content regions for bottom-aligned card actions
-and shared sizing tokens for equivalent inputs, dropdowns and buttons. Preserve
-these relationships when labels wrap or errors appear; stack the group when needed.
-Do not pad copy or constrain text to make a short-content screenshot line up.
+intentional composition offsets from accidental drift, and verify the intended
+relationships with real content and error states.
 
 ## Define the component contract
 
@@ -43,7 +42,7 @@ values and useful existing behavior unless the brief changes them.
 
 Custom controls are welcome. Derive their composition, typography, imagery, shape and feedback from the brand kit and the task. Explore an editorial search field with categorized suggestions, a product finder with removable filter chips, an illustrated navigation panel, a compact command-style search dialog or a form with a live summary when appropriate. Choose the treatment for this product; these examples are options, not a repeated template. A distinctive search bar can be a major design feature.
 
-Use semantic HTML as the foundation and style or compose it freely. Keep familiar text editing, selection, navigation and submission behavior. Use actual links, buttons, inputs, labels and dialogs; add ARIA only for semantics or states the native elements do not provide. A clickable visual shell must contain working controls. Maintain visible labels, focus, pointer cursors, contrast and usable targets in every custom treatment.
+Use semantic HTML as the foundation and style or compose it freely. Keep familiar text editing, selection, navigation and submission behavior. Use actual links, buttons, inputs, labels and dialogs; add ARIA only for semantics or states the native elements do not provide. A clickable visual shell must contain working controls. Custom treatments retain the shared accessibility requirements in [Interface rules](interface-rules.md).
 
 - **Navigation:** follow [Navigation menus](#navigation-menus) for the shared structure, alignment and interaction contract. A modal navigation overlay also follows the dialog rules below.
 - **Modals and dialogs:** design the trigger, opening, content, close/cancel and result states. Give the dialog an accessible name, sensible initial focus and a visible close control. Use native modal dialog behavior where suitable; contain keyboard focus, make the background inert, allow Escape dismissal and restore focus to the opener or a logical next target. Keep long content scrollable and actions reachable on small screens. Define how cancellation treats unsaved input. See the [WAI modal dialog pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/).
@@ -98,10 +97,9 @@ shared instance; a homepage check alone does not verify the example headers.
 
 ## Verify complete journeys
 
-Test the actual implementation with mouse and keyboard, at desktop and 320px,
-and with 200% text resizing. Inspect every affected page and dynamic state for the
-font, contrast, cursor, target, focus and reflow rules. Screenshots alone do not
-prove interaction behavior or complete accessibility conformance.
+Test affected journeys with mouse and keyboard and apply the rendered checks in
+[Interface rules](interface-rules.md#verify-before-delivery). Screenshots alone do
+not prove interaction behavior or complete accessibility conformance.
 
 - Follow every navigation destination and section anchor, including the menu
   transitions, focus and alignment checks specified above.
