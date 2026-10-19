@@ -7,6 +7,8 @@ and project context. Replace blanket style and control prescriptions with contex
 choices and accessibility requirements. Add motion inspection and reduced-motion
 guidance. Consolidate repeated workflow and verification rules in their owning
 guides while preserving the brand-kit, generated-mockup and asset-fidelity sequence.
+Retain the explicit ban on emoji as interface icons or decoration; the background,
+eyebrow and italic-emphasis defaults remain soft preferences.
 
 # 2.1.0
 

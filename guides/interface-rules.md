@@ -6,7 +6,8 @@ Choose treatments for the current product and verify them in the actual interfac
 
 ### Labels and icons
 
-Give labels and icons a useful role in comprehension, navigation or feedback.
+Do not use emoji as interface icons or decoration. Give labels and icons a useful
+role in comprehension, navigation or feedback.
 Choose their treatment to fit the product; decorative marks should not compete
 with the content. Give icon-only controls accessible names and hide purely
 decorative icons from assistive technology. Preserve useful form labels, captions
